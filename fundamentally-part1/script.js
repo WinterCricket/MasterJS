@@ -1,9 +1,12 @@
-let js = "javascript, okay?";
+let isIsland = false;
 
-console.log(40 * 8 + 23 - 40);
+let population = 64000000;
 
-let country = "Spain";
-let continent = "Europe";
-let population = 28;
+let country = 'Canada';
 
-console.log(country, continent + " population is " + population);
+let language;
+
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof country);
+console.log(typeof language);
