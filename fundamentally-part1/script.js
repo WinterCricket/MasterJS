@@ -1,12 +1,12 @@
-let isIsland = false;
+const isIsland = false;
 
-let population = 64000000;
+const population = 64000000;
 
-let country = 'Canada';
+const country = 'Canada';
 
-let language;
+const language = 'French';
 
-console.log(typeof isIsland);
-console.log(typeof population);
+console.log(typeof isIsland, typeof population);
+// console.log(typeof );
 console.log(typeof country);
 console.log(typeof language);
