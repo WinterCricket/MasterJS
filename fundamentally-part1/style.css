@@ -3,7 +3,7 @@ body {
 	display: flex;
 	align-items: center;
 	background: linear-gradient(to top left, #28b487, #7dd56f);
-	background: linear-gradient(to bottom left, rgb(241, 245, 36, .5), rgba(63, 121, 230, 0.4)), url('images/boats.png');
+	background: linear-gradient(to bottom left, rgb(255, 102, 0), rgba(63, 121, 230, 0.5)), url('images/boats.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
