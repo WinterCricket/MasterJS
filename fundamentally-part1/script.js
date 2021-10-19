@@ -11,18 +11,11 @@
 // console.log(typeof country);
 // console.log(typeof language);
 
-const massMark = 71;
-const heightMark = 1.8;
+const firstName = 'Wray';
+const job = 'web developer';
+const birthYear = 1968;
+let year = 2008;
 
-const massJohn = 78;
-const heightJohn = 1.7;
+const wray = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '.';
 
-function functionBMI(mass, height) {
-	return mass / height ** 2;
-}
-
-let markBMI = functionBMI(massMark, heightMark);
-let johnBMI = functionBMI(massJohn, heightJohn);
-
-let markIsAFatass = markBMI > johnBMI;
-console.log(markIsAFatass);
+console.log(wray);
