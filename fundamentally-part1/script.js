@@ -18,18 +18,11 @@ const massJohn = 78;
 const heightJohn = 1.7;
 
 function functionBMI(mass, height) {
-	return (BMI = mass / height ** 2);
+	return mass / height ** 2;
 }
 
-function markHigherBMI() {
-	let markBMI = functionBMI(massMark, heightMark);
-	let johnBMI = functionBMI(massJohn, heightJohn);
+let markBMI = functionBMI(massMark, heightMark);
+let johnBMI = functionBMI(massJohn, heightJohn);
 
-	if (markBMI > johnBMI) {
-		return true;
-	} else {
-		return false;
-	}
-}
-
-console.log(markHigherBMI());
+let markIsAFatass = markBMI > johnBMI;
+console.log(markIsAFatass);
