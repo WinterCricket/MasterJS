@@ -13,16 +13,17 @@
 
 const firstName = 'Wray';
 const job = 'web developer';
-const birthYear = 1968;
+const birthYear = 2011;
 let year = 2021;
 
-// const wray = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '.';
+let age = year - birthYear;
 
-// console.log(wray);
+const canDrink = age >= 21;
 
-const wrayTemplateStr = `<h2>I'm ${firstName},</h2>
- <h2>a ${year - birthYear} years</h2>
- <h2>old ${job}.</h2>`;
-
-document.getElementById('concatination').innerHTML = wrayTemplateStr;
-console.log(wrayTemplateStr);
+if (canDrink) {
+	document.getElementById('drinking').innerHTML = `${firstName} is ${age}, and therefore can drink😎 `;
+} else {
+	document.getElementById(
+		'drinking'
+	).innerHTML = `${firstName} is ${age}, which is really too young for getting pissed🤦‍♀️ `;
+}
