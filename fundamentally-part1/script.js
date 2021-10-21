@@ -19,3 +19,4 @@ let year = 2008;
 const wray = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '.';
 
 console.log(wray);
+document.getElementById('concatination').innerHTML = wray;
