@@ -14,12 +14,15 @@
 const firstName = 'Wray';
 const job = 'web developer';
 const birthYear = 1968;
-let year = 2008;
+let year = 2021;
 
 // const wray = "I'm " + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '.';
 
 // console.log(wray);
 
-const wrayTemplateStr = `I'm ${firstName}, a ${year - birthYear} years old ${job}.`;
+const wrayTemplateStr = `<h2>I'm ${firstName},</h2>
+ <h2>a ${year - birthYear} years</h2>
+ <h2>old ${job}.</h2>`;
 
 document.getElementById('concatination').innerHTML = wrayTemplateStr;
+console.log(wrayTemplateStr);
