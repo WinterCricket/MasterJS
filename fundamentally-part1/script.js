@@ -28,7 +28,7 @@
 // 	).innerHTML = `${firstName} is ${age}, which is really too young for getting pissed🤦‍♀️ `;
 // }
 
-const dom = document.getElementById('drinking');
+const domID = document.getElementById('drinking');
 // const money = 8200;
 
 // if (money) {
@@ -36,13 +36,18 @@ const dom = document.getElementById('drinking');
 // } else {
 // 	dom.innerHTML = `Don't spend, you have  $${money}. You will get into trouble here in Texas.`;
 // }
-const age = Number(prompt("What's your age?"));
+// const age = Number(prompt("What's your age?"));
 
-if (age >= 18) {
-	dom.innerHTML = `You are ${age}, which is a fine enough age for using the brothel. Welcome! You have ${75 -
-		age} years left for enjoying sex.`;
-} else if (age >= 75) {
-	dom.innerHTML = `You are past retirement age by ${age - 65} years, and no longer eligible for physical affection.`;
-} else {
-	dom.innerHTML = `Ah, ${age}, far too young for using our services. Wait ${18 - age} years, then come back!`;
-}
+// if (age >= 18) {
+// 	domID.innerHTML = `You are ${age}, which is a fine enough age for using the brothel. Welcome! You have ${75 -
+// 		age} years left for enjoying sex.`;
+// } else if (age >= 75) {
+// 	domID.innerHTML = `You are past retirement age by ${age - 65} years, and no longer eligible for physical affection.`;
+// } else {
+// 	domID.innerHTML = `Ah, ${age}, far too young for using our services. Wait ${18 - age} years, then come back!`;
+// }
+
+const hasMFA = true;
+const hasPublished = true;
+
+domID.innerHTML = hasMFA && hasPublished;
