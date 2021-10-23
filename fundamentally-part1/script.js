@@ -36,6 +36,13 @@ const dom = document.getElementById('drinking');
 // } else {
 // 	dom.innerHTML = `Don't spend, you have  $${money}. You will get into trouble here in Texas.`;
 // }
-const car = prompt("What's your prefered car?");
+const age = Number(prompt("What's your age?"));
 
-dom.innerHTML = car;
+if (age >= 18) {
+	dom.innerHTML = `You are ${age}, which is a fine enough age for using the brothel. Welcome! You have ${65 -
+		age} years left for enjoying sex.`;
+} else if (age >= 75) {
+	dom.innerHTML = `You are past retirement age by ${age - 65} years, and no longer eligible for physical affection.`;
+} else {
+	dom.innerHTML = `Ah, ${age}, far too young for using our services. Wait ${18 - age} years, then come back!`;
+}
