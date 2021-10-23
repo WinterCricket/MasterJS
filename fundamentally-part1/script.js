@@ -29,10 +29,13 @@
 // }
 
 const dom = document.getElementById('drinking');
-const money = 0;
+// const money = 8200;
 
-if (money) {
-	dom.innerHTML = `Okay, but try to spend less than your ${money}. Certainly don't use credit, and don't make promises you can't keep.`;
-} else {
-	dom.innerHTML = `Don't spend, you have  ${money}. You will get into trouble here in Texas.`;
-}
+// if (money) {
+// 	dom.innerHTML = `Okay, but try to spend less than your $${money}. Certainly don't use credit, and don't make promises you can't keep.`;
+// } else {
+// 	dom.innerHTML = `Don't spend, you have  $${money}. You will get into trouble here in Texas.`;
+// }
+const car = prompt("What's your prefered car?");
+
+dom.innerHTML = car;
