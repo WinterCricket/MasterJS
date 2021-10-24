@@ -47,7 +47,18 @@ const domID = document.getElementById('drinking');
 // 	domID.innerHTML = `Ah, ${age}, far too young for using our services. Wait ${18 - age} years, then come back!`;
 // }
 
-const hasMFA = true;
-const hasPublished = true;
+// const hasMFA = true;
+// const hasPublished = true;
+// const friendsWithPower = false;
+// domID.innerHTML = (hasMFA && hasPublished) || friendsWithPower;
 
-domID.innerHTML = hasMFA && hasPublished;
+const avgDogs = (96 + 108 + 89) / 3;
+const avgCats = (88 + 91 + 110) / 3;
+
+if (avgDogs === avgCats) {
+	domID.innerHTML = `A tie: ${avgDogs} to ${avgCats} no one takes home a trophy.`;
+} else if (avgDogs > avgCats) {
+	domID.innerHTML = `The Dogs take home the trophy with a ${avgDogs - avgCats} points lead.`;
+} else {
+	domID.innerHTML = `The Cats take home the trophy with a ${avgCats - avgDogs} points lead.`;
+}
