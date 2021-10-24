@@ -52,20 +52,26 @@ const domID = document.getElementById('drinking');
 // const friendsWithPower = false;
 // domID.innerHTML = (hasMFA && hasPublished) || friendsWithPower;
 
-const avgDogs = (97 + 112 + 101) / 3;
-const avgCats = (109 + 95 + 106) / 3;
-//minimum avg score of 100?
-if (avgDogs === avgCats && avgDogs >= 100) {
-	domID.innerHTML = `A tie of ${avgDogs} each, so each team takes home a 2nd place medal: 🥈🥈.`;
-} else if (avgDogs === avgCats && avgDogs < 100) {
-	domID.innerHTML = `A tie with the avg score being a mere ${avgDogs} so each team takes home nothing but sore feelings.😪🤐`;
-} else if (avgDogs > avgCats && avgDogs >= 100) {
-	domID.innerHTML = `The Dogs take home the trophy🏆 with a ${avgDogs -
-		avgCats} points lead, and an average score of ${abgDogs}.`;
-} else if (avgCats >= 100) {
-	domID.innerHTML = `The Cats take home the 🏆 with a ${avgCats -
-		avgDogs} points lead, and an average score of ${avgCats}.`;
-} else {
-	domID.innerHTML = `With the average score between the two teams being ${(avgDogs + avgCats) /
-		2}, no one takes a trophy, no how!🤷‍♂️🤦‍♂️`;
-}
+// const avgDogs = (97 + 112 + 101) / 3;
+// const avgCats = (109 + 95 + 106) / 3;
+// //minimum avg score of 100?
+// if (avgDogs === avgCats && avgDogs >= 100) {
+// 	domID.innerHTML = `A tie of ${avgDogs} each, so each team takes home a 2nd place medal: 🥈🥈.`;
+// } else if (avgDogs === avgCats && avgDogs < 100) {
+// 	domID.innerHTML = `A tie with the avg score being a mere ${avgDogs} so each team takes home nothing but sore feelings.😪🤐`;
+// } else if (avgDogs > avgCats && avgDogs >= 100) {
+// 	domID.innerHTML = `The Dogs take home the trophy🏆 with a ${avgDogs -
+// 		avgCats} points lead, and an average score of ${abgDogs}.`;
+// } else if (avgCats >= 100) {
+// 	domID.innerHTML = `The Cats take home the 🏆 with a ${avgCats -
+// 		avgDogs} points lead, and an average score of ${avgCats}.`;
+// } else {
+// 	domID.innerHTML = `With the average score between the two teams being ${(avgDogs + avgCats) /
+// 		2}, no one takes a trophy, no how!🤷‍♂️🤦‍♂️`;
+// }
+
+const age = 55;
+
+age >= 21
+	? (domID.innerHTML = `I'm ${age - 21} older than you, so I drink rain. 🌨`)
+	: (domID.innerHTML = `I'm still young enough to drink lightning. 🌩`);
