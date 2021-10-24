@@ -70,8 +70,9 @@ const domID = document.getElementById('drinking');
 // 		2}, no one takes a trophy, no how!🤷‍♂️🤦‍♂️`;
 // }
 
-const age = 55;
+const age = 31;
 
-age >= 21
-	? (domID.innerHTML = `I'm ${age - 21} older than you, so I drink rain. 🌨`)
-	: (domID.innerHTML = `I'm still young enough to drink lightning. 🌩`);
+const drink =
+	age > 21 ? `I am ${age} and must instead drink rain. 🌨` : `I'm ${age}, still young enough to drink lightning. 🌩`;
+
+domID.innerHTML = drink;
