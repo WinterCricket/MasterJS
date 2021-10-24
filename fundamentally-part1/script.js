@@ -70,9 +70,14 @@ const domID = document.getElementById('drinking');
 // 		2}, no one takes a trophy, no how!🤷‍♂️🤦‍♂️`;
 // }
 
-const age = 31;
+// const age = 31;
 
-const drink =
-	age > 21 ? `I am ${age} and must instead drink rain. 🌨` : `I'm ${age}, still young enough to drink lightning. 🌩`;
+// const drink =
+// 	age > 21 ? `I am ${age} and must instead drink rain. 🌨` : `I'm ${age}, still young enough to drink lightning. 🌩`;
 
-domID.innerHTML = drink;
+// domID.innerHTML = drink;
+const bill = 40;
+const totalBill = bill >= 50 && bill <= 300 ? bill * 1.15 : bill * 1.2;
+
+domID.innerHTML = `Your total bill comes to $${totalBill}, with $${bill} for the bill and $${totalBill -
+	bill} for the added tip.`;
