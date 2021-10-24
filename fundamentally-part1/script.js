@@ -54,11 +54,16 @@ const domID = document.getElementById('drinking');
 
 const avgDogs = (96 + 108 + 89) / 3;
 const avgCats = (88 + 91 + 110) / 3;
-
-if (avgDogs === avgCats) {
-	domID.innerHTML = `A tie: ${avgDogs} to ${avgCats} no one takes home a trophy.`;
-} else if (avgDogs > avgCats) {
+//minimum avg score of 100?
+if (avgDogs === avgCats && avgDogs >= 100) {
+	domID.innerHTML = `A tie of ${avgDogs} each, so each team takes home half the trophy.`;
+} else if (avgDogs === avgCats && avgDogs < 100) {
+	domID.innerHTML = `A tie with the avg score being a mere ${avgDogs} so each team takes home nothing but sore feelings.`;
+} else if (avgDogs > avgCats && avgDogs >= 100) {
 	domID.innerHTML = `The Dogs take home the trophy with a ${avgDogs - avgCats} points lead.`;
-} else {
+} else if (avgCats >= 100) {
 	domID.innerHTML = `The Cats take home the trophy with a ${avgCats - avgDogs} points lead.`;
+} else {
+	domID.innerHTML = `With the average score between the two teams being ${(avgDogs + avgCats) /
+		2}, no one takes a trophy, no how!`;
 }
