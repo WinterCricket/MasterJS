@@ -3,8 +3,14 @@
 const domID = document.getElementById('domID');
 
 function twoPies(first, second) {
-	domID.innerHTML = `Make two pies: ${first} pie and ${second} pie.`;
+	const pies = `Make two pies: ${first} pie and ${second} pie.`;
+	return pies;
 }
 
-//const kidPies = twoPies('ice cream', 'pineapple');
-const adultPies = twoPies('shrimp', 'whiskey-peach');
+const mummyPies = twoPies('licorice', 'ginger');
+
+const kidPies = twoPies('M&M', 'Ice Cream');
+
+const adultPies = twoPies('whisky-peach', 'sherry-shrimp');
+
+domID.innerHTML = kidPies;
