@@ -28,5 +28,5 @@ const domID = document.getElementById('domID');
 const calcAgeism2 = function(birthYear) {
 	return 2037 - birthYear;
 };
-domID.innerHTML = `You will be made immortal in this function expression in the year ${calcAgeism2}.`;
-console.log(calcAgeism2);
+domID.innerHTML = `You will be made immortal in this function expression in the year ${calcAgeism2(1966)}.`;
+console.log(calcAgeism2(1966));
