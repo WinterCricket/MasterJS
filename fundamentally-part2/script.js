@@ -1,9 +1,9 @@
 'use strict';
 
-let domID = document.getElementById('domID');
+const domID = document.getElementById('domID');
 
-let driversLisc = false;
-const passTest = true;
+function twoPies(first, second) {
+	domID.innerHTML = `Make two pies: ${first} pie and ${second} pie.`;
+}
 
-if (passTest) driversLisc = true;
-if (driversLisc) domID.innerHTML = `You can drive!`;
+twoPies('ice cream', 'pineapple');
