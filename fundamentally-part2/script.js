@@ -17,9 +17,16 @@ const domID = document.getElementById('domID');
 
 //function declaration
 
-function calcAgeism1(birthYear) {
+// function calcAgeism1(birthYear) {
+// 	return 2037 - birthYear;
+// }
+// const ageism1 = calcAgeism1(1966);
+// domID.innerHTML = `You will be ${ageism1} when the tech brings immortality.`;
+// console.log(ageism1);
+
+//function expression using anonymous function
+const calcAgeism2 = function(birthYear) {
 	return 2037 - birthYear;
-}
-const ageism1 = calcAgeism1(1966);
-domID.innerHTML = `You will be ${ageism1} when the tech brings immortality.`;
-console.log(ageism1);
+};
+domID.innerHTML = `You will be made immortal in this function expression in the year ${calcAgeism2}.`;
+console.log(calcAgeism2);
