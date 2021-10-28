@@ -39,11 +39,11 @@ const domID = document.getElementById('domID');
 // const age3 = calcAge3(1966);
 // domID.innerHTML = `They roused everone who was ${age3} years alive.`;
 
-const yearsToRetire = (birthYear) => {
+const yearsToRetire = (birthYear, nickName) => {
 	const age = 2022 - birthYear;
 	const retirement = 67 - age;
-	return retirement;
+
+	return (domID.innerHTML = `${nickName}, you're running out of runway, love. Just ${retirement} more years and you'll end up in the trees without a soft landing.`);
 };
 
-const notWorking = yearsToRetire(1966);
-domID.innerHTML = `You're running out of runway, love. Just ${notWorking} more years and you'll end up in the trees without a soft landing.`;
+yearsToRetire(1966, 'Frostworthy');
