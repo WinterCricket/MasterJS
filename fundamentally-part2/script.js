@@ -38,15 +38,19 @@ const domID = document.getElementById('domID');
 
 // const age3 = calcAge3(1966);
 // domID.innerHTML = `They roused everone who was ${age3} years alive.`;
-function lifeExtenz(years) {
-	return years * 17;
-}
+const calcAge = function(birthYear) {
+	return 2055 - birthYear;
+};
 
 const yearsToRetire = (birthYear, nickName) => {
-	const age = 2022 - birthYear;
+	const age = calcAge(birthYear);
 	const retirement = 67 - age;
-	const delayYears = lifeExtenz(retirement);
-	return (domID.innerHTML = `${nickName}, you're running out of runway, love. Just ${delayYears} more years and you'll end up in the trees without a soft landing.`);
+
+	if (retirement > 0) {
+		return (domID.innerHTML = `${retirement}`);
+	} else {
+		return (domID.innerHTML = `${nickName}, you're running out of runway, love. Just ${retirement} more years and you'll end up in the trees without a soft landing.`);
+	}
 };
 
 yearsToRetire(1966, 'Frostworthy');
