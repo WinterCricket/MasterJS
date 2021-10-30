@@ -39,20 +39,20 @@ const domID = document.getElementById('domID');
 // const age3 = calcAge3(1966);
 // domID.innerHTML = `They roused everone who was ${age3} years alive.`;
 const calcAge = function(birthYear) {
-	return 2055 - birthYear;
+	return 2021 - birthYear;
 };
 
 const yearsToRetire = (birthYear, nickName) => {
 	const age = calcAge(birthYear);
 	const retirement = 67 - age;
 
-	if (retirement > 0 && retirement < 60) {
-		return (domID.innerHTML = `You've got ${retirement} years of runway left to take off!`);
-	} else if (retirement >= 60 && retirement < 67) {
-		return (domID.innerHTML = `${nickName}, you're running out of runway, love. Just ${retirement} more years and you'll end up in the trees without a soft landing.`);
+	if (retirement > 10) {
+		return (domID.innerHTML = `You've got ${retirement} years of runway left to take off!✈🛫🛬🚀🛩🛰🪂`);
+	} else if (retirement > 0 && retirement < 9) {
+		return (domID.innerHTML = `${nickName}, you're running out of runway, love. Just ${retirement} more years and you'll end up in the trees without a soft landing.😲`);
 	} else {
 		return (domID.innerHTML = `Having missed the mark by ${retirement *
-			-1} years, you, ${nickName}, have done run off the runway!`);
+			-1} years, you, ${nickName}, have done run off the runway!⏰🗑🛌⛴`);
 	}
 };
 
