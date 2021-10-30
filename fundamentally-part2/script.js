@@ -47,7 +47,7 @@ const yearsToRetire = (birthYear, nickName) => {
 	const retirement = 67 - age;
 
 	if (retirement > 10) {
-		return (domID.innerHTML = `You've got ${retirement} years of runway left to take off!✈🛫🛬🚀🛩🛰🪂`);
+		return (domID.innerHTML = `You've got ${retirement} years of runway left to take off!✈🚀git 🪂`);
 	} else if (retirement > 0 && retirement < 9) {
 		return (domID.innerHTML = `${nickName}, you're running out of runway, love. Just ${retirement} more years and you'll end up in the trees without a soft landing.😲`);
 	} else {
