@@ -60,7 +60,7 @@ const domID = document.getElementById('domID');
 
 const calcAverage = (score1, score2, score3) => {
 	const av = (score1 + score2 + score3) / 3;
-	return (domID.innerHTML = `Your averaged score of ${av}🏁 will place against the other racers.`);
+	return (domID.innerHTML = `Your averaged score of ${av} 🏁points will place against the other contestants. The highest score average wins.`);
 };
 
 calcAverage(3, 4, 8);
