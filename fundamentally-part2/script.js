@@ -38,22 +38,29 @@ const domID = document.getElementById('domID');
 
 // const age3 = calcAge3(1966);
 // domID.innerHTML = `They roused everone who was ${age3} years alive.`;
-const calcAge = function(birthYear) {
-	return 2021 - birthYear;
+// const calcAge = function(birthYear) {
+// 	return 2021 - birthYear;
+// };
+
+// const yearsToRetire = (birthYear, nickName) => {
+// 	const age = calcAge(birthYear);
+// 	const retirement = 67 - age;
+
+// 	if (retirement > 10) {
+// 		return (domID.innerHTML = `You've got ${retirement} years of runway left to take off!✈🚀🪂`);
+// 	} else if (retirement > 0 && retirement < 9) {
+// 		return (domID.innerHTML = `${nickName}, you're running out of runway, love. Just ${retirement} more years and you'll end up in the trees without a soft landing.😲`);
+// 	} else {
+// 		return (domID.innerHTML = `Having missed the mark by ${retirement *
+// 			-1} years, you, ${nickName}, have done run off the runway!⏰🗑🛌⛴`);
+// 	}
+// };
+
+// yearsToRetire(1966, 'Frostworthy');
+
+const calcAverage = (score1, score2, score3) => {
+	const av = (score1 + score2 + score3) / 3;
+	return (domID.innerHTML = `Your averaged score of ${av}🏁 will place against the other racers.`);
 };
 
-const yearsToRetire = (birthYear, nickName) => {
-	const age = calcAge(birthYear);
-	const retirement = 67 - age;
-
-	if (retirement > 10) {
-		return (domID.innerHTML = `You've got ${retirement} years of runway left to take off!✈🚀git 🪂`);
-	} else if (retirement > 0 && retirement < 9) {
-		return (domID.innerHTML = `${nickName}, you're running out of runway, love. Just ${retirement} more years and you'll end up in the trees without a soft landing.😲`);
-	} else {
-		return (domID.innerHTML = `Having missed the mark by ${retirement *
-			-1} years, you, ${nickName}, have done run off the runway!⏰🗑🛌⛴`);
-	}
-};
-
-yearsToRetire(1966, 'Frostworthy');
+calcAverage(3, 4, 8);
