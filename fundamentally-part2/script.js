@@ -1,7 +1,7 @@
 'use strict';
 
 const domID = document.getElementById('domID');
-
+const domClass = document.getElementsByClassName('domClass');
 // function twoPies(first, second) {
 // 	const pies = `Make two pies: ${first} pie and ${second} pie.`;
 // 	return pies;
@@ -68,5 +68,8 @@ const domID = document.getElementById('domID');
 const cars = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
 domID.innerHTML = cars[0];
 
-const writers = new Array('Joyce', 'Boston Girl', 'Davis', 'Rumi');
-domID.innerHTML = writers[2];
+// const writers = new Array('Joyce', 'Boston Girl', 'Davis', 'Rumi');
+// domID.innerHTML = writers[2];
+
+const classy = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
+domClass.innerHTML = classy[2];
