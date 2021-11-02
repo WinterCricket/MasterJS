@@ -58,9 +58,15 @@ const domID = document.getElementById('domID');
 
 // yearsToRetire(1966, 'Frostworthy');
 
-const calcAverage = (score1, score2, score3) => {
-	const av = (score1 + score2 + score3) / 3;
-	return (domID.innerHTML = `Your averaged score of ${av} 🏁points will place against the other contestants. The highest score average wins.`);
-};
+// const calcAverage = (score1, score2, score3) => {
+// 	const av = (score1 + score2 + score3) / 3;
+// 	return (domID.innerHTML = `Your averaged score of ${av} 🏁points will place against the other contestants. The highest score average wins.`);
+// };
 
-calcAverage(3, 4, 8);
+// calcAverage(3, 4, 8);
+
+const cars = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
+domID.innerHTML = cars[0];
+
+const writers = new Array('Joyce', 'Boston Girl', 'Davis', 'Rumi');
+domID.innerHTML = writers[2];
