@@ -72,4 +72,4 @@ domID.innerHTML = cars[0];
 // domID.innerHTML = writers[2];
 
 const classy = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
-domClass.innerHTML = classy[2];
+domClass.innerHTML = classy[1];
