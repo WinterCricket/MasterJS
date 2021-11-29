@@ -65,14 +65,16 @@ const domClass = document.querySelector('#domClass');
 
 // calcAverage(3, 4, 8);
 
-const cars = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
-domID.innerHTML = cars[2];
+// const cars = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
+// domID.innerHTML = cars[2];
 
-// const writers = new Array('Joyce', 'Boston Girl', 'Davis', 'Rumi');
-// domID.innerHTML = writers[2];
+// // const writers = new Array('Joyce', 'Boston Girl', 'Davis', 'Rumi');
+// // domID.innerHTML = writers[2];
 
-cars[2] = 'Range Rover';
-domID.innerHTML = cars[2];
+// cars[2] = 'Range Rover';
+// domID.innerHTML = cars[2];
 
-const classy = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
-domClass.innerHTML = classy[1];
+// const classy = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
+// domClass.innerHTML = classy[1];
+
+let fatBastards = 
