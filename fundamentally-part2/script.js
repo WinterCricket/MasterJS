@@ -1,7 +1,7 @@
 'use strict';
 
-const domID = document.getElementById('domID');
-const domClass = document.getElementsByClassName('domClass');
+const domID = document.querySelector('#domID');
+const domClass = document.querySelector('#domClass');
 // function twoPies(first, second) {
 // 	const pies = `Make two pies: ${first} pie and ${second} pie.`;
 // 	return pies;
@@ -66,7 +66,7 @@ const domClass = document.getElementsByClassName('domClass');
 // calcAverage(3, 4, 8);
 
 const cars = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
-domID.innerHTML = cars[0];
+domID.innerHTML = cars[2];
 
 // const writers = new Array('Joyce', 'Boston Girl', 'Davis', 'Rumi');
 // domID.innerHTML = writers[2];
