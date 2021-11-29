@@ -71,5 +71,8 @@ domID.innerHTML = cars[2];
 // const writers = new Array('Joyce', 'Boston Girl', 'Davis', 'Rumi');
 // domID.innerHTML = writers[2];
 
+cars[2] = 'Range Rover';
+domID.innerHTML = cars[2];
+
 const classy = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
 domClass.innerHTML = classy[1];
