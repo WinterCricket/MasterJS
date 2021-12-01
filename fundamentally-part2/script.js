@@ -81,4 +81,4 @@ const fatBastards = [ 'Cousin Joe', 'Avery Smith', 'Apple White', 'Janet Fowler'
 fatBastards.push('Fly McFly');
 fatBastards.unshift('Jane Allgood');
 domID.innerHTML = fatBastards;
-domClass.innerHTML = fatBastards.length;
+domClass.innerHTML = fatBastards.indexOf('Apple White') + ' ' + 'index';
