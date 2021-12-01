@@ -77,4 +77,8 @@ const domClass = document.querySelector('#domClass');
 // const classy = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
 // domClass.innerHTML = classy[1];
 
-let fatBastards = 
+const fatBastards = [ 'Cousin Joe', 'Avery Smith', 'Apple White', 'Janet Fowler' ];
+fatBastards.push('Fly McFly');
+fatBastards.unshift('Jane Allgood');
+domID.innerHTML = fatBastards;
+domClass.innerHTML = fatBastards.length;
