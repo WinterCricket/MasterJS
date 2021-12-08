@@ -77,8 +77,14 @@ const domClass = document.querySelector('#domClass');
 // const classy = [ 'Camry', 'Audi', 'Saab', 'Subaru' ];
 // domClass.innerHTML = classy[1];
 
-const fatBastards = [ 'Cousin Joe', 'Avery Smith', 'Apple White', 'Janet Fowler' ];
-fatBastards.push('Fly McFly');
-fatBastards.unshift('Jane Allgood');
-domID.innerHTML = fatBastards;
-domClass.innerHTML = fatBastards.indexOf('Apple White') + ' ' + 'index';
+// const fatBastards = [ 'Cousin Joe', 'Avery Smith', 'Apple White', 'Janet Fowler' ];
+// fatBastards.push('Fly McFly');
+// fatBastards.unshift('Jane Allgood');
+// domID.innerHTML = fatBastards;
+// domClass.innerHTML = fatBastards.indexOf('Apple White') + ' ' + 'index';
+
+const flowers = [ 'Albert Flowers', 2022 - 1976, 'developer', [ 'Ellen', 'Maria', 'Sylvia' ] ];
+
+for (let i = flowers.length - 1; i >= 0; i--) {
+	console.log(flowers[i]);
+}
