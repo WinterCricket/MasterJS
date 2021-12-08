@@ -86,5 +86,5 @@ const domClass = document.querySelector('#domClass');
 const flowers = [ 'Albert Flowers', 2022 - 1976, 'developer', [ 'Ellen', 'Maria', 'Sylvia' ] ];
 
 for (let i = flowers.length - 1; i >= 0; i--) {
-	console.log(flowers[i]);
+	console.log(i, flowers[i]);
 }
