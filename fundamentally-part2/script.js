@@ -83,8 +83,17 @@ const domClass = document.querySelector('#domClass');
 // domID.innerHTML = fatBastards;
 // domClass.innerHTML = fatBastards.indexOf('Apple White') + ' ' + 'index';
 
-const flowers = [ 'Albert Flowers', 2022 - 1976, 'developer', [ 'Ellen', 'Maria', 'Sylvia' ] ];
+// const flowers = [ 'Albert Flowers', 2022 - 1976, 'developer', [ 'Ellen', 'Maria', 'Sylvia' ] ];
 
-for (let i = flowers.length - 1; i >= 0; i--) {
-	console.log(i, flowers[i]);
+// for (let i = flowers.length - 1; i >= 0; i--) {
+// 	console.log(i, flowers[i]);
+// }
+
+const cash = [ 100, 23, 500, 230, 800, 25 ];
+
+let total = 0;
+
+for (let i = 0; i < cash.length; i++) {
+	total += cash[i];
 }
+console.log(total / cash.length);
