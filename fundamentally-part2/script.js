@@ -89,11 +89,18 @@ const domClass = document.querySelector('#domClass');
 // 	console.log(i, flowers[i]);
 // }
 
-const cash = [ 100, 23, 500, 230, 800, 25 ];
+const cashPrinciple = [ 100, 23, 500, 230, 800, 25 ];
+let interest = 0;
 
 let total = 0;
 
-for (let i = 0; i < cash.length; i++) {
-	total += cash[i];
+for (let i = 0; i < cashPrinciple.length; i++) {
+	total += cashPrinciple[i];
+	console.log(`----Cash----`);
+	console.log(total);
+
+	interest += cashPrinciple[i] * 0.07;
+	console.log(`----Interest----`);
+
+	console.log(interest);
 }
-console.log(total / cash.length);
