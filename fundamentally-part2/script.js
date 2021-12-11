@@ -103,4 +103,6 @@ for (let i = 0; i < cashPrinciple.length; i++) {
 	console.log(`----Interest----`);
 
 	console.log(interest);
+	console.log(`----GrandTotal---`);
+	console.log(total + interest);
 }
