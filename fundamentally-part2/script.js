@@ -106,7 +106,7 @@ for (let i = 0; i < deposits.length; i++) {
     `-----Deposit: ${deposits[i]}--- Interest: ${interests[i]}---Year End Total of Account: ${totals[i]}`
   );
 }
-
+console.log(deposits, interests, totals);
 // function calcGrandT() {
 //   let sum = 0;
 //   for (let i = 0; i < deposits.length; i++) {
