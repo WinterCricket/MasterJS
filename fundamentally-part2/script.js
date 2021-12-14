@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const domID = document.querySelector('#domID');
-const domClass = document.querySelector('#domClass');
+const domID = document.querySelector("#domID");
+const domClass = document.querySelector("#domClass");
 // function twoPies(first, second) {
 // 	const pies = `Make two pies: ${first} pie and ${second} pie.`;
 // 	return pies;
@@ -89,20 +89,15 @@ const domClass = document.querySelector('#domClass');
 // 	console.log(i, flowers[i]);
 // }
 
-const cashPrinciple = [ 100, 23, 500, 230, 800, 25 ];
-let interest = 0;
+const deposits = [100, 300, 20, 700, 500, 12000, 40, 880, 440, 1200];
 
-let total = 0;
+const interest = [];
+const total = [];
+const yearTotal = [];
 
-for (let i = 0; i < cashPrinciple.length; i++) {
-	total += cashPrinciple[i];
-	console.log(`----Cash----`);
-	console.log(total);
-
-	interest += cashPrinciple[i] * 0.07;
-	console.log(`----Interest----`);
-
-	console.log(interest);
-	console.log(`----GrandTotal---`);
-	console.log(total + interest);
+//const totalAccount = deposit >= 750 ? deposit * 0.07 : deposit * 0.03;
+let sum = 0;
+for (let i = 0; i < deposits.length; i++) {
+  sum += deposits[i];
 }
+console.log(sum);

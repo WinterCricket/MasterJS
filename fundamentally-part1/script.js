@@ -28,7 +28,7 @@
 // 	).innerHTML = `${firstName} is ${age}, which is really too young for getting pissed🤦‍♀️ `;
 // }
 
-const domID = document.getElementById('drinking');
+const domID = document.getElementById("drinking");
 // const money = 8200;
 
 // if (money) {
@@ -76,8 +76,10 @@ const domID = document.getElementById('drinking');
 // 	age > 21 ? `I am ${age} and must instead drink rain. 🌨` : `I'm ${age}, still young enough to drink lightning. 🌩`;
 
 // domID.innerHTML = drink;
-const bill = 430;
-const totalBill = bill >= 50 && bill <= 300 ? bill * 1.15 : bill * 1.2;
 
-domID.innerHTML = `Your total bill comes to $${totalBill}, with $${bill} for the bill and $${totalBill -
-	bill} for the added tip.`;
+const totalBill =
+  principle >= 50 && account <= 300 ? account * 1.15 : account * 1.2;
+
+domID.innerHTML = `Your total bill comes to $${totalBill}, with $${bill} for the bill and $${
+  totalBill - bill
+} for the added tip.`;
