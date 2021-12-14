@@ -91,13 +91,26 @@ const domClass = document.querySelector("#domClass");
 
 const deposits = [100, 300, 20, 700, 500, 12000, 40, 880, 440, 1200];
 
-const interest = [];
-const total = [];
+const interests = [];
+const totals = [];
 const yearTotal = [];
 
-//const totalAccount = deposit >= 750 ? deposit * 0.07 : deposit * 0.03;
-let sum = 0;
+const calcInterest = (deposit) =>
+  deposit >= 750 ? deposit * 0.07 : deposit * 0.03;
+
 for (let i = 0; i < deposits.length; i++) {
-  sum += deposits[i];
+  const interest = calcInterest(deposits[i]);
+  interests.push(interest);
+  totals.push(deposits[i] + interests[i]);
+  console.log(
+    `-----Deposit: ${deposits[i]}--- Interest: ${interests[i]}---Year End Total of Account: ${totals[i]}`
+  );
 }
-console.log(sum);
+
+// function calcGrandT() {
+//   let sum = 0;
+//   for (let i = 0; i < deposits.length; i++) {
+//     return (sum += totals[i]);
+//   }
+// }
+// console.log(calcGrandT(totals));
