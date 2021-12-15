@@ -118,9 +118,24 @@ const domClass = document.querySelector("#domClass");
 // calcGrandT(totals);
 
 const temperatures = [3, -2, -6, -1, 0, "error", 9, 13, 17, 15, 14, 9, 5];
+
 let numberAmps = [];
+
 function calcTempAmplitude(arr) {
-  console.log(`${Math.max(...arr) - Math.min(...arr)}`);
+  let max = [0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > max) {
+      max = arr[i];
+    }
+  }
+
+  let min = [0];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i];
+    }
+  }
+  console.log(max - min);
 }
 
 for (let i = 0; i < temperatures.length; i++) {
