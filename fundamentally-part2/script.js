@@ -116,8 +116,10 @@ const domClass = document.querySelector("#domClass");
 // console.log(`******Sum of all Account Totals******`);
 
 // calcGrandT(totals);
+const temp1 = [3, -2, -6, -1, 0, "error", 9, 13, 17, 15, 14, 9, 5];
+const temp2 = [33, -8, -6, 4, 9, "error", 2, 22, 15, 23, -11];
 
-const temperatures = [3, -2, -6, -1, 0, "error", 9, 13, 17, 15, 14, 9, 5];
+const temperatures = temp1.concat(temp2);
 
 let numberAmps = [];
 
@@ -140,4 +142,5 @@ for (let i = 0; i < temperatures.length; i++) {
   numberAmps.push(temperatures[i]);
 }
 let answer = calcTempAmplitude(numberAmps);
-domID.innerHTML = answer;
+
+domID.innerHTML = `Here is the temperature amplitude: ${answer}! `;
