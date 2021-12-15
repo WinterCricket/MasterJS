@@ -123,19 +123,21 @@ let numberAmps = [];
 
 function calcTempAmplitude(arr) {
   let max = arr[0];
+  let min = arr[0];
+
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] > max) max = arr[i];
   }
 
-  let min = arr[0];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] < min) min = arr[i];
   }
-  console.log(max - min);
+  return max - min;
 }
-//skip over non-numbers
+
 for (let i = 0; i < temperatures.length; i++) {
   if (typeof temperatures[i] !== "number") continue;
   numberAmps.push(temperatures[i]);
 }
-calcTempAmplitude(numberAmps);
+let answer = calcTempAmplitude(numberAmps);
+domID.innerHTML = answer;
