@@ -116,17 +116,17 @@ const domClass = document.querySelector("#domClass");
 // console.log(`******Sum of all Account Totals******`);
 
 // calcGrandT(totals);
-const measureKelvin = () => {
+const measureKelvin = function () {
   const measurement = {
     type: "temperature",
     unit: "celsius",
     value: Number(prompt("Degrees celsius: ")),
   };
 
-  //console.table(measurement);
+  console.table(measurement);
 
   const kelvin = measurement.value + 273;
 
   return kelvin;
 };
-domID.innerHTML = measureKelvin();
+console.log(measureKelvin());
