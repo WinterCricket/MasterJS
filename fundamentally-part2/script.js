@@ -116,31 +116,17 @@ const domClass = document.querySelector("#domClass");
 // console.log(`******Sum of all Account Totals******`);
 
 // calcGrandT(totals);
-const temp1 = [3, -2, -6, -1, 0, "error", 9, 13, 17, 15, 14, 9, 5];
-const temp2 = [33, -8, -6, 4, 9, "error", 2, 22, 15, 23, -11];
+const measureKelvin = () => {
+  const measurement = {
+    type: "temperature",
+    unit: "celsius",
+    value: Number(prompt("Degrees celsius: ")),
+  };
 
-const temperatures = temp1.concat(temp2);
+  console.table(measurement);
 
-let numberAmps = [];
+  const kelvin = measurement.value + 273;
 
-function calcTempAmplitude(arr) {
-  let max = arr[0];
-  let min = arr[0];
-
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > max) max = arr[i];
-  }
-
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < min) min = arr[i];
-  }
-  return max - min;
-}
-
-for (let i = 0; i < temperatures.length; i++) {
-  if (typeof temperatures[i] !== "number") continue;
-  numberAmps.push(temperatures[i]);
-}
-let answer = calcTempAmplitude(numberAmps);
-
-domID.innerHTML = `Here is the temperature amplitude: ${answer}! `;
+  return kelvin;
+};
+measureKelvin();
