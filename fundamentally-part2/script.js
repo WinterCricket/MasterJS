@@ -123,10 +123,10 @@ const measureKelvin = () => {
     value: Number(prompt("Degrees celsius: ")),
   };
 
-  console.table(measurement);
+  //console.table(measurement);
 
   const kelvin = measurement.value + 273;
 
   return kelvin;
 };
-measureKelvin();
+domID.innerHTML = measureKelvin();
