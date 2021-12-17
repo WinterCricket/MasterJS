@@ -89,44 +89,45 @@ const domClass = document.querySelector("#domClass");
 // 	console.log(i, flowers[i]);
 // }
 
-// const deposits = [100, 300, 20, 700, 500, 12000, 40, 880, 440, 1200];
+const deposits = [100, 300, 20, 700, 500, 12000, 40, 880, 440, 1200];
 
-// const interests = [];
-// const totals = [];
+const interests = [];
+const totals = [];
 
-// const calcInterest = (deposit) =>
-//   deposit >= 750 ? deposit * 0.07 : deposit * 0.03;
+const calcInterest = (deposit) =>
+  deposit >= 750 ? deposit * 0.07 : deposit * 0.03;
 
-// for (let i = 0; i < deposits.length; i++) {
-//   const interest = calcInterest(deposits[i]);
-//   interests.push(interest);
-//   totals.push(deposits[i] + interests[i]);
-//   console.log(
-//     `-----Deposit: ${deposits[i]}--- Interest: ${interests[i]}---Year End Total of Account: ${totals[i]}`
-//   );
-// }
-// //console.log(deposits, interests, totals);
-// function calcGrandT(arr) {
-//   let sum = 0;
-//   for (let i = 0; i < arr.length; i++) {
-//     sum += arr[i];
-//   }
-//   console.log(sum);
-// }
-// console.log(`******Sum of all Account Totals******`);
+for (let i = 0; i < deposits.length; i++) {
+  const interest = calcInterest(deposits[i]);
+  interests.push(interest);
+  totals.push(deposits[i] + interests[i]);
+  console.log(
+    `-----Deposit: ${deposits[i]}--- Interest: ${interests[i]}---Year End Total of Account: ${totals[i]}`
+  );
+}
+//console.log(deposits, interests, totals);
+function calcGrandT(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(sum);
+}
+console.log(`******Sum of all Account Totals******`);
 
-// calcGrandT(totals);
-const measureKelvin = function () {
-  const measurement = {
-    type: "temperature",
-    unit: "celsius",
-    value: Number(prompt("Degrees celsius: ")),
-  };
+calcGrandT(totals);
 
-  console.table(measurement);
+// const measureKelvin = function () {
+//   const measurement = {
+//     type: "temperature",
+//     unit: "celsius",
+//     value: Number(prompt("Degrees celsius: ")),
+//   };
 
-  const kelvin = measurement.value + 273;
+//   console.table(measurement);
 
-  return kelvin;
-};
-console.log(measureKelvin());
+//   const kelvin = measurement.value + 273;
+
+//   return kelvin;
+// };
+// console.log(measureKelvin());
