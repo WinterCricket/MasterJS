@@ -138,6 +138,6 @@ const printForecast = function (arr) {
     listString.push(arr[i] + `°C in ${i + 1} days`);
   }
   let string = listString.join(" ... ");
-  console.log(string);
+  domID.innerHTML = string;
 };
-printForecast([3, 5, 7, 9, 4]);
+printForecast([17, 21, 23]);
