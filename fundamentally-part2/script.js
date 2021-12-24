@@ -137,6 +137,7 @@ const printForecast = function (arr) {
   for (let i = 0; i < arr.length; i++) {
     listString.push(arr[i] + `°C in ${i + 1} days...`);
   }
-  console.log(listString);
+  let string = listString.join();
+  console.log(string);
 };
 printForecast([3, 5, 7, 9, 4]);
