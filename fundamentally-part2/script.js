@@ -140,4 +140,4 @@ const printForecast = function (arr) {
   let string = listString.join(" ... ");
   domID.innerHTML = string;
 };
-printForecast([17, 21, 23]);
+printForecast([12, 5, -5, 0, 4]);
