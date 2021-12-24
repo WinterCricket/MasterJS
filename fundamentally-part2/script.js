@@ -135,9 +135,9 @@ const domClass = document.querySelector("#domClass");
 const printForecast = function (arr) {
   let listString = [];
   for (let i = 0; i < arr.length; i++) {
-    listString.push(arr[i] + `°C in ${i + 1} days...`);
+    listString.push(arr[i] + `°C in ${i + 1} days`);
   }
-  let string = listString.join();
+  let string = listString.join(" ... ");
   console.log(string);
 };
 printForecast([3, 5, 7, 9, 4]);
