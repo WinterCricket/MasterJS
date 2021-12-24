@@ -133,8 +133,10 @@ const domClass = document.querySelector("#domClass");
 // console.log(measureKelvin());
 
 const printForecast = function (arr) {
+  let listString = [];
   for (let i = 0; i < arr.length; i++) {
-    console.log(arr[i] + `°C in ${i + 1} days...`);
+    listString.push(arr[i] + `°C in ${i + 1} days...`);
   }
+  console.log(listString);
 };
 printForecast([3, 5, 7, 9, 4]);
