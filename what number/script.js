@@ -1,4 +1,4 @@
 "use strict";
 
-document.querySelector(".message").textContent = "Horse Shit Menand!";
-console.log(document.querySelector(".message").textContent);
+document.querySelector(".message").innerHTML = "Number Thumper!";
+console.log(document.querySelector(".message").innerHTML);
