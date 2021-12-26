@@ -17,12 +17,22 @@ document.querySelector(".check").addEventListener("click", function () {
   } else if (guess === secretNumber) {
     classMess.innerHTML = "🎁You got it right! You win!🎈";
   } else if (guess > secretNumber) {
-    classMess.innerHTML = "⬇Guess lower!⬇";
-    score--;
-    document.querySelector(".score").innerHTML = score;
+    if (score > 1) {
+      classMess.innerHTML = "⬇Guess lower!⬇";
+      score--;
+      document.querySelector(".score").innerHTML = score;
+    } else {
+      classMess.innerHTML = "🛑You lost! Round over.🛑";
+      document.querySelector(".score").innerHTML = 0;
+    }
   } else if (guess < secretNumber) {
-    classMess.innerHTML = "⬆Guess higher!⬆";
-    score--;
-    document.querySelector(".score").innerHTML = score;
+    if (score > 1) {
+      classMess.innerHTML = "⬆Guess higher!⬆";
+      score--;
+      document.querySelector(".score").innerHTML = score;
+    } else {
+      classMess.innerHTML = "🛑You lost! Round over.🛑";
+      document.querySelector(".score").innerHTML = 0;
+    }
   }
 });
