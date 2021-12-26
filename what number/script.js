@@ -15,7 +15,9 @@ document.querySelector(".check").addEventListener("click", function () {
     classMess.innerHTML = "⛔No Number!⛔";
   } else if (guess === secretNumber) {
     classMess.innerHTML = "🎁You got it right! You win!🎈";
-  } else {
-    classMess.innerHTML = "Guess again!";
+  } else if (guess > secretNumber) {
+    classMess.innerHTML = "Guess is too high. Try a lower number!⬇";
+  } else if (guess < secretNumber) {
+    classMess.innerHTML = "Guess is too low. Try a higher number!⬆";
   }
 });
