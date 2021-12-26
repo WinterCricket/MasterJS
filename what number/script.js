@@ -5,15 +5,15 @@
 // console.log((document.querySelector(".guess").value = 16));
 // console.log(document.querySelector(".guess").value);
 
-const number = Math.trunc(Math.random() * 20) + 1;
+const secretNumber = Math.trunc(Math.random() * 20) + 1;
 const classMess = document.querySelector(".message");
-document.querySelector(".number").innerHTML = number;
+document.querySelector(".number").innerHTML = secretNumber;
 
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   if (!guess) {
     classMess.innerHTML = "⛔No Number!⛔";
-  } else if (guess === number) {
+  } else if (guess === secretNumber) {
     classMess.innerHTML = "🎁You got it right! You win!🎈";
   } else {
     classMess.innerHTML = "Guess again!";
