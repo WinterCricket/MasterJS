@@ -45,4 +45,6 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
-document.querySelector(".again").addEventListener("click", function () {});
+document.querySelector(".again").addEventListener("click", function () {
+  document.location.reload(true);
+});
