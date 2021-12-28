@@ -10,9 +10,6 @@ let score = 20;
 const classMess = document.querySelector(".message");
 document.querySelector(".number").textContent = secretNumber;
 
-// function againFunc (){
-//   Number(document.querySelector(".guess").reset() );
-// }
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
   console.log(guess, typeof guess);
@@ -48,3 +45,4 @@ document.querySelector(".check").addEventListener("click", function () {
     }
   }
 });
+document.querySelector(".again").addEventListener("click", function () {});
