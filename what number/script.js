@@ -8,14 +8,18 @@
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 const classMess = document.querySelector(".message");
-document.querySelector(".number").innerHTML = secretNumber;
+//document.querySelector(".number").innerHTML = secretNumber;
 
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
+  //no guess made
   if (!guess) {
     classMess.innerHTML = "⛔No Number!⛔";
+    // guess is correct
   } else if (guess === secretNumber) {
     classMess.innerHTML = "🎁You got it right! You win!🎈";
+    document.querySelector("body").style.backgroundColor = "green";
+    //guess is to high
   } else if (guess > secretNumber) {
     if (score > 1) {
       classMess.innerHTML = "⬇Guess lower!⬇";
@@ -25,6 +29,7 @@ document.querySelector(".check").addEventListener("click", function () {
       classMess.innerHTML = "🛑You lost! Round over.🛑";
       document.querySelector(".score").innerHTML = 0;
     }
+    //guess is too low
   } else if (guess < secretNumber) {
     if (score > 1) {
       classMess.innerHTML = "⬆Guess higher!⬆";
