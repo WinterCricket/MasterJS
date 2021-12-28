@@ -8,42 +8,43 @@
 const secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 const classMess = document.querySelector(".message");
-//document.querySelector(".number").innerHTML = secretNumber;
+document.querySelector(".number").textContent = secretNumber;
 
 // function againFunc (){
 //   Number(document.querySelector(".guess").reset() );
 // }
-document.querySelector(".check").addEventListener(".click", function () {
+document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
-  console.log(guess);
+  console.log(guess, typeof guess);
+
   //no guess made
   if (!guess) {
-    classMess.innerHTML = "⛔No Number!⛔";
+    classMess.textContent = "⛔No Number!⛔";
     // guess is correct
   } else if (guess === secretNumber) {
-    classMess.innerHTML = "🎁You got it right! You win!🎈";
+    classMess.textContent = "🎁You got it right! You win!🎈";
     document.querySelector("body").style.backgroundColor = "green";
     document.querySelector(".number").style.width = "30rem";
     document.querySelector(".number").innerHTML = secretNumber;
     //guess is to high
   } else if (guess > secretNumber) {
     if (score > 1) {
-      classMess.innerHTML = "⬇Guess lower!⬇";
+      classMess.textContent = "⬇Guess lower!⬇";
       score--;
-      document.querySelector(".score").innerHTML = score;
+      document.querySelector(".score").textContent = score;
     } else {
-      classMess.innerHTML = "🛑You lost! Round over.🛑";
-      document.querySelector(".score").innerHTML = 0;
+      classMess.textContent = "🛑You lost! Round over.🛑";
+      document.querySelector(".score").textContent = 0;
     }
     //guess is too low
   } else if (guess < secretNumber) {
     if (score > 1) {
-      classMess.innerHTML = "⬆Guess higher!⬆";
+      classMess.textContent = "⬆Guess higher!⬆";
       score--;
-      document.querySelector(".score").innerHTML = score;
+      document.querySelector(".score").textContent = score;
     } else {
-      classMess.innerHTML = "🛑You lost! Round over.🛑";
-      document.querySelector(".score").innerHTML = 0;
+      classMess.textContent = "🛑You lost! Round over.🛑";
+      document.querySelector(".score").textContent = 0;
     }
   }
 });
