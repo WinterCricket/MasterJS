@@ -28,6 +28,14 @@ const highScoreVal = function (highScore) {
   document.querySelector(".highScore").innerHTML = highScore;
 };
 
+const bodyColor = function (color) {
+  document.querySelector("body").style.backgroundColor = color;
+};
+
+const numberWidth = function (width) {
+  document.querySelector(".number").style.width = width;
+};
+
 document.querySelector(".check").addEventListener("click", function () {
   //can't put guess numbered into function here
   const guess = Number(document.querySelector(".guess").value);
@@ -39,8 +47,8 @@ document.querySelector(".check").addEventListener("click", function () {
     // guess is correct
   } else if (guess === secretNumber) {
     displayMessage("🎁You got it right! You win!🎈");
-    document.querySelector("body").style.backgroundColor = "green";
-    document.querySelector(".number").style.width = "30rem";
+    bodyColor("green");
+    numberWidth("30rem");
     numberDisplay(secretNumber);
     if (score > highScore) {
       highScore = score;
@@ -66,8 +74,8 @@ document.querySelector(".check").addEventListener("click", function () {
 document.querySelector(".again").addEventListener("click", function () {
   score = 20;
   secretNumber = Math.trunc(Math.random() * 20) + 1;
-  document.querySelector(".number").style.width = "15rem";
-  document.querySelector("body").style.backgroundColor = "#222";
+  numberWidth("15rem");
+  bodyColor("#222");
   numberDisplay("?");
   displayMessage("Start guessing...");
   scoreCard(score);
