@@ -38,7 +38,8 @@ document.querySelector(".check").addEventListener("click", function () {
         : (classMess.textContent = "⬆Guess higher!⬆");
     score--;
     document.querySelector(".score").textContent = score;
-  } else {
+  }
+  if (score < 1) {
     classMess.textContent = "🛑You lost! Round over.🛑";
     document.querySelector(".score").textContent = 0;
   }
