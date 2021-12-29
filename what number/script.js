@@ -8,37 +8,56 @@
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 let score = 20;
 let highScore = 0;
-const displayMessage = document.querySelector(".message");
-//document.querySelector(".number").textContent = secretNumber;
+const displayMessage = function (message) {
+  document.querySelector(".message").textContent = message;
+};
+
+const scoreCard = function (score) {
+  document.querySelector(".score").textContent = score;
+};
+
+const numberDisplay = function (number) {
+  document.querySelector(".number").innerHTML = number;
+};
+
+const guessValue = function (value) {
+  document.querySelector(".guess").value = value;
+};
+
+const highScoreVal = function (highScore) {
+  document.querySelector(".highScore").innerHTML = highScore;
+};
 
 document.querySelector(".check").addEventListener("click", function () {
+  //can't put guess numbered into function here
   const guess = Number(document.querySelector(".guess").value);
   //console.log(guess, typeof guess);
 
   //no guess made
   if (!guess) {
-    displayMessage.textContent = "⛔No Number!⛔";
+    displayMessage("⛔No Number!⛔");
     // guess is correct
   } else if (guess === secretNumber) {
-    displayMessage.textContent = "🎁You got it right! You win!🎈";
+    displayMessage("🎁You got it right! You win!🎈");
     document.querySelector("body").style.backgroundColor = "green";
     document.querySelector(".number").style.width = "30rem";
-    document.querySelector(".number").innerHTML = secretNumber;
+    numberDisplay(secretNumber);
     if (score > highScore) {
       highScore = score;
-      document.querySelector(".highScore").innerHTML = highScore;
+      highScoreVal(highScore);
     }
 
     //guess different from secret
   } else if (guess !== secretNumber) {
     if (score > 1) {
-      displayMessage.textContent =
-        guess > secretNumber ? "⬇Guess lower!⬇" : "⬆Guess higher!⬆";
+      displayMessage(
+        guess > secretNumber ? "⬇Guess lower!⬇" : "⬆Guess higher!⬆"
+      );
       score--;
-      document.querySelector(".score").textContent = score;
+      scoreCard(score);
     } else {
-      displayMessage.textContent = "🛑You lost! Round over.🛑";
-      document.querySelector(".score").textContent = 0;
+      displayMessage("🛑You lost! Round over.🛑");
+      scoreCard(0);
     }
   }
   //guess is too low
@@ -49,8 +68,8 @@ document.querySelector(".again").addEventListener("click", function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector(".number").style.width = "15rem";
   document.querySelector("body").style.backgroundColor = "#222";
-  document.querySelector(".number").textContent = "?";
-  displayMessage.textContent = "Start guessing...";
-  document.querySelector(".score").textContent = score;
-  document.querySelector(".guess").value = "";
+  numberDisplay("?");
+  displayMessage("Start guessing...");
+  scoreCard(score);
+  guessValue("");
 });
