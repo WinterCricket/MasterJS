@@ -16,6 +16,22 @@ body {
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    to top left,
+    rgba(128, 141, 139, 0.5),
+    rgb(196, 209, 135, 0.5)
+  );
+  background: linear-gradient(
+      to bottom left,
+      rgb(190, 148, 120, 0.5),
+      rgba(87, 112, 158, 0.5)
+    ),
+    url("images/boats.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* LAYOUT */
