@@ -31,3 +31,4 @@ const coder = {
   },
 };
 coder.ageCalc(1966, 2008);
+coder.college = "Warren Wilson College";
