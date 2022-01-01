@@ -23,12 +23,11 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
 });
 
-const coder = {
-  name: "Josh Brolan",
-  language: "French",
-  ageCalc: function (birthYear, today) {
-    console.log(`${coder.name}, you are now ${today - birthYear} years old.`);
-  },
+const Coder = function (name, language, ageCalc) {
+  this.n = name;
+  this.lang = language;
 };
-coder.ageCalc(1966, 2008);
-coder.college = "Warren Wilson College";
+
+const Todd = new Coder("Todd Winn", "French", 1990, 2012);
+
+console.log(Todd.lang, Todd.n);
