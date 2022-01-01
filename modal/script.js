@@ -23,11 +23,15 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "Escape" && !modal.classList.contains("hidden")) closeModal();
 });
 
-const Coder = function (name, language, ageCalc) {
+const Coder = function (name, language) {
   this.n = name;
   this.lang = language;
 };
 
-const Todd = new Coder("Todd Winn", "French", 1990, 2012);
+Coder.prototype.sayHello = function () {
+  return "hello there and here!";
+};
 
-console.log(Todd.lang, Todd.n);
+const todd = new Coder("Ford", "Italian");
+const sam = new Coder("Sam");
+console.log(todd.n, todd.lang, sam.sayHello());
