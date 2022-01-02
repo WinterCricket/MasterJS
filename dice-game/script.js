@@ -17,8 +17,6 @@ btnRoll.addEventListener("click", function () {
   let roll = Math.floor(Math.random() * 6 + 1);
   score0El.textContent = roll;
 });
-
 btnHold.addEventListener("click", function () {
-  //current0.textContent = score0El;
-  console.log(typeof score0El);
+  current0.textContent = roll;
 });
