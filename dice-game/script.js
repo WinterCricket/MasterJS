@@ -12,8 +12,6 @@ diceEl.classList.add("hidden");
 
 let player0 = 0;
 let player1 = 0;
-// let current0 = 0;
-// let current1 = 0;
 
 btnRoll.addEventListener("click", function () {
   let roll = Math.trunc(Math.random() * 6) + 1;
@@ -23,5 +21,16 @@ btnRoll.addEventListener("click", function () {
 });
 btnHold.addEventListener("click", function () {
   player0 = player0;
-  console.log(`player0 points:  ${player0}`);
+  document.querySelector("#current--0").textContent = player0;
+});
+
+btnRoll.addEventListener("click", function () {
+  let roll = Math.trunc(Math.random() * 6) + 1;
+  score1El.textContent = roll;
+  player1 = player1 + roll;
+  console.log(player1);
+});
+btnHold.addEventListener("click", function () {
+  player1 = player1;
+  document.querySelector("#current--1").textContent = player1;
 });
