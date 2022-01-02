@@ -13,6 +13,11 @@ diceEl.classList.add("hidden");
 let player0 = 0;
 let player1 = 0;
 
+btnNew.addEventListener("click", function () {
+  location.reload();
+});
+
+//player 1
 btnRoll.addEventListener("click", function () {
   let roll = Math.trunc(Math.random() * 6) + 1;
   score0El.textContent = roll;
@@ -23,6 +28,8 @@ btnHold.addEventListener("click", function () {
   player0 = player0;
   document.querySelector("#current--0").textContent = player0;
 });
+
+//player 2
 
 btnRoll.addEventListener("click", function () {
   let roll = Math.trunc(Math.random() * 6) + 1;
