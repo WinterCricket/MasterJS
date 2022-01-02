@@ -10,13 +10,18 @@ score0El.textContent = 0;
 score0El.textContent = 0;
 diceEl.classList.add("hidden");
 
-let current0 = 0;
-let current1 = 0;
+let player0 = 0;
+let player1 = 0;
+// let current0 = 0;
+// let current1 = 0;
 
 btnRoll.addEventListener("click", function () {
-  let roll = Math.floor(Math.random() * 6 + 1);
+  let roll = Math.trunc(Math.random() * 6) + 1;
   score0El.textContent = roll;
+  player0 = player0 + roll;
+  console.log(player0);
 });
 btnHold.addEventListener("click", function () {
-  current0.textContent = roll;
+  player0 = player0;
+  console.log(`player0 points:  ${player0}`);
 });
