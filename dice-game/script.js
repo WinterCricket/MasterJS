@@ -2,15 +2,23 @@
 
 const score0El = document.querySelector("#score--0");
 const score1El = document.querySelector("#score--1");
-const score2El = document.querySelector("#score--2");
-const score3El = document.querySelector("#score--3");
-const score4El = document.querySelector("#score--4");
-const score5El = document.querySelector("#score--5");
-const score6El = document.querySelector("#score--6");
+const diceEl = document.querySelector(".dice");
+const btnNew = document.querySelector(".btn--new");
+const btnRoll = document.querySelector(".btn--roll");
+const btnHold = document.querySelector(".btn--hold");
+score0El.textContent = 0;
+score0El.textContent = 0;
+diceEl.classList.add("hidden");
 
-const dice1 = document.querySelector(".dice");
+let current0 = 0;
+let current1 = 0;
 
-dice1.classList.add("hidden");
+btnRoll.addEventListener("click", function () {
+  let roll = Math.floor(Math.random() * 6 + 1);
+  score0El.textContent = roll;
+});
 
-score0E0.textContent = 0;
-score0E1.textContent = 0;
+btnHold.addEventListener("click", function () {
+  //current0.textContent = score0El;
+  console.log(typeof score0El);
+});
