@@ -6,6 +6,7 @@ const diceEl = document.querySelector(".dice");
 const btnNew = document.querySelector(".btn--new");
 const btnRoll = document.querySelector(".btn--roll");
 const btnHold = document.querySelector(".btn--hold");
+//starting conditions
 score0El.textContent = 0;
 score0El.textContent = 0;
 diceEl.classList.add("hidden");
@@ -17,12 +18,13 @@ btnNew.addEventListener("click", function () {
   location.reload();
 });
 
-//player 1
+//player 1 rolling dice function
 btnRoll.addEventListener("click", function () {
-  let roll = Math.trunc(Math.random() * 6) + 1;
-  score0El.textContent = roll;
-  player0 = player0 + roll;
-  console.log(player0);
+  //1. gen rndm dice roll
+  const dice = Math.trunc(Math.random() * 6) + 1;
+  // score0El.textContent = diceEl;
+  // player0 = player0 + dice;
+  diceEl.classList.remove("hidden");
 });
 btnHold.addEventListener("click", function () {
   player0 = player0;
