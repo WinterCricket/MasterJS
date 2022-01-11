@@ -19,6 +19,13 @@ const scores = [0, 0];
 let currentScore = 0;
 let activePlayer = 0;
 
+const switchPlayer = function () {
+  currentScore = 0;
+  activePlayer = activePlayer === 0 ? 1 : 0;
+  player0El.classList.toggle("player--active");
+  player1El.classList.toggle("player--active");
+};
+
 // btnNew.addEventListener("click", function () {
 //   location.reload();
 // });
@@ -39,11 +46,7 @@ btnRoll.addEventListener("click", function () {
       currentScore;
   } else {
     document.getElementById(`current--${activePlayer}`).textContent = 0;
-    currentScore = 0;
-    activePlayer = activePlayer === 0 ? 1 : 0;
-
-    player0El.classList.toggle("player--active");
-    player1El.classList.toggle("player--active");
+    switchPlayer();
   }
 });
 //hold function
@@ -51,22 +54,15 @@ btnHold.addEventListener("click", function () {
   scores[activePlayer] += currentScore;
   document.getElementById(`score--${activePlayer}`).textContent =
     scores[activePlayer];
-  currentScore = 0;
-  activePlayer = activePlayer === 0 ? 1 : 0;
-
-  player0El.classList.toggle("player--active");
-  player1El.classList.toggle("player--active");
+  //has score reached 100 yet?
+  if (scores[activePlayer] >= 100) {
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.add("player--winner");
+    document
+      .querySelector(`.player--${activePlayer}`)
+      .classList.remove("player--active");
+  } else {
+    switchPlayer();
+  }
 });
-
-// //player 2
-
-// btnRoll.addEventListener("click", function () {
-//   let roll = Math.trunc(Math.random() * 6) + 1;
-//   score1El.textContent = roll;
-//   player1 = player1 + roll;
-//   console.log(player1);
-// });
-// btnHold.addEventListener("click", function () {
-//   player1 = player1;
-//   document.querySelector("#current--1").textContent = player1;
-// });
