@@ -1,0 +1,20 @@
+/* element selectors */
+h1 {
+  color: red;
+}
+img {
+  width: 100px;
+}
+
+/* class selectors */
+
+.fish {
+  background-color: cadetblue;
+  width: 300px;
+}
+
+/* ID selectors */
+#heading {
+  color: chartreuse;
+  font-size: 50px;
+}
