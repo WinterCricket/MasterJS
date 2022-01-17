@@ -17,3 +17,8 @@ body {
 .centTable ul {
   text-decoration: none;
 }
+hr {
+  width: 10%;
+  border-top: dotted 12px;
+  border-bottom: none;
+}
