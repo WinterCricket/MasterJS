@@ -5,6 +5,7 @@
 body {
   background-color: rgb(146, 169, 189);
   color: whitesmoke;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .lightGrayish {
@@ -18,7 +19,14 @@ body {
   text-decoration: none;
 }
 hr {
-  width: 10%;
-  border-top: dotted 12px;
-  border-bottom: none;
+  width: 6%;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: whitesmoke;
+  border-width: 12px;
+}
+a {
+  text-decoration: none;
+  color: tomato;
+  font-size: 1.4rem;
 }
