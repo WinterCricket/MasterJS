@@ -7,11 +7,24 @@ h1 {
 div {
   background-color: #eef2ff;
 }
-.middle-container {
+.top-container {
+  border: 10px solid black;
+  height: 200px;
+  padding: 20px;
   width: 200px;
+}
+.middle-container {
   background-color: green;
+  border: 20px solid black;
+  height: 200px;
+  margin-left: 260px;
+
+  width: 200px;
 }
 .bottom-container {
-  width: 200px;
   background-color: firebrick;
+  border: 10px solid black;
+  height: 200px;
+  margin-left: 500px;
+  width: 200px;
 }
