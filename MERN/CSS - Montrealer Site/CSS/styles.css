@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+}
+h1 {
+  margin-top: 0;
+}
+div {
+  background-color: #eef2ff;
+}
+.middle-container {
+  width: 200px;
+  background-color: green;
+}
+.bottom-container {
+  width: 200px;
+  background-color: firebrick;
+}
