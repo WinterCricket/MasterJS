@@ -8,7 +8,6 @@ h1 {
   font-family: "Sacramento", cursive;
   font-size: 5.62rem;
   margin-top: 50px auto 0 auto;
-  line-height: 4;
 }
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -53,8 +52,7 @@ a {
   left: 300px;
   bottom: 300px;
 }
-.profile {
-}
+
 .woman {
   border-radius: 50%;
   width: 10rem;
@@ -67,4 +65,7 @@ a {
 }
 .subhead {
   text-align: center;
+}
+.skill-row {
+  width: 50%;
 }
