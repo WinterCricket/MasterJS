@@ -67,6 +67,15 @@ a {
   text-align: left;
 } */
 /* above to keep image center and text left*/
-.skill-row img {
+/* below use my version, after which is instructor solution*/
+
+/* .skill-row img {
+  width: 25%;
+} */
+.computer {
+  width: 25%;
+}
+
+.chillies {
   width: 25%;
 }
