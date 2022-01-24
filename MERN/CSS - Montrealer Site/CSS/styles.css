@@ -75,11 +75,11 @@ a {
 .computer {
   width: 25%;
   float: left;
-  padding-right: 30px;
+  margin-right: 30px;
 }
 
 .chillies {
   width: 25%;
   float: left;
-  padding-right: 30px;
+  margin-right: 30px;
 }
