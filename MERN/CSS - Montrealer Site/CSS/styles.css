@@ -62,10 +62,13 @@ a {
 .skill-row {
   width: 50%;
   margin: 100px auto;
+  text-align: left;
+  /* to make text left align with image*/
 }
-.skill-row h3 {
+/* .skill-row h3 {
   text-align: left;
 }
 .skill-row p {
   text-align: left;
-}
+} */
+/* above to keep image center and text left*/
