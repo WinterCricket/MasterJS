@@ -80,6 +80,9 @@ a {
 
 .chillies {
   width: 25%;
-  float: left;
-  margin-right: 30px;
+  float: right;
+  margin-left: 30px;
+}
+.chillies-graph {
+  clear: right;
 }
