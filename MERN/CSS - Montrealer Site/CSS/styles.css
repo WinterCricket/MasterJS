@@ -35,12 +35,6 @@ a {
   padding-top: 100px;
 }
 
-.middle-container {
-}
-
-.bottom-container {
-}
-
 .top-cloud {
   position: absolute;
   right: 300px;
@@ -64,6 +58,7 @@ a {
   margin: 100px auto;
   text-align: left;
   /* to make text left align with image*/
+  line-height: 2;
 }
 /* .skill-row h3 {
   text-align: left;
@@ -72,3 +67,6 @@ a {
   text-align: left;
 } */
 /* above to keep image center and text left*/
+.skill-row img {
+  width: 25%;
+}
