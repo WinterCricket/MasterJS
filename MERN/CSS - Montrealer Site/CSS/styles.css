@@ -63,3 +63,9 @@ a {
   width: 50%;
   margin: 100px auto;
 }
+.skill-row h3 {
+  text-align: left;
+}
+.skill-row p {
+  text-align: left;
+}
