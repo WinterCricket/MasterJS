@@ -2,6 +2,7 @@ body {
   margin: 0;
   text-align: center;
   font-family: "Merriweather", serif;
+  color: #40514e;
 }
 
 h1 {
@@ -32,11 +33,7 @@ hr {
   border-top: #eaf6f6 dotted 6px;
   border-bottom: none;
   width: 3%;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-p {
-  color: #40514e;
+  margin: 100px auto;
 }
 
 .top-container {
@@ -146,6 +143,6 @@ p {
   top: 80px;
 }
 .contact-me p {
-  margin-bottom: 50px;
-  margin-top: 30px;
+  margin: 60px auto;
+  max-width: 831px;
 }
