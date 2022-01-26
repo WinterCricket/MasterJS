@@ -28,6 +28,16 @@ h3,
 a {
   color: #11999e;
 }
+hr {
+  border-top: #eaf6f6 dotted 6px;
+  border-bottom: none;
+  width: 3%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+p {
+  color: #40514e;
+}
 
 .top-container {
   background-color: #eef2ff;
@@ -51,6 +61,7 @@ a {
   border-radius: 50%;
   width: 10rem;
   padding: 30px;
+  margin-top: 40px;
 }
 
 .skill-row {
@@ -83,6 +94,10 @@ a {
   float: right;
   margin-left: 30px;
 }
-.chillies-graph {
-  clear: right;
+.profile {
+  width: 50%;
+  margin: 100px auto;
+  text-align: center;
+  /* to make text left align with image*/
+  line-height: 2;
 }
