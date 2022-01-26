@@ -35,6 +35,9 @@ hr {
   width: 3%;
   margin: 100px auto;
 }
+a {
+  font-family: "Montserrat", sans-serif;
+}
 
 .top-container {
   background-color: #eef2ff;
@@ -108,7 +111,7 @@ hr {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 8px;
-  font-family: Arial;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-size: 20px;
   padding: 10px 20px 10px 20px;
@@ -138,11 +141,11 @@ hr {
 }
 .bottom-container p {
   color: #eaf6f6;
-  height: 200px;
+  height: 300px;
   position: relative;
   top: 80px;
 }
 .contact-me p {
   margin: 60px auto;
-  max-width: 831px;
+  width: 40% auto;
 }
