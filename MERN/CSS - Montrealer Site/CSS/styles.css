@@ -38,7 +38,10 @@ hr {
 a {
   font-family: "Montserrat", sans-serif;
 }
-
+a:hover {
+  color: orange;
+  text-shadow: rgb(75, 64, 54);
+}
 .top-container {
   background-color: #eef2ff;
   position: relative;
@@ -148,4 +151,8 @@ a {
 .contact-me p {
   margin: 60px auto;
   width: 40% auto;
+}
+.copyright {
+  font-size: 0.74rem;
+  padding: 20px;
 }
