@@ -16,11 +16,14 @@ h1 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
 }
-.col-lg-6 {
+/* .col-lg-6 {
   flex: 0 0 auto;
   width: 50%;
+} */
+.lavendar {
+  background-color: lavender;
 }
-
 #title {
-  background-color: #ff4c68;
+  /* background-color: #ff4c68; */
+  background-color: rgb(191, 191, 223);
 }
