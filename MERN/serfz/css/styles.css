@@ -4,6 +4,7 @@ h1 {
   line-height: 1.5;
   font-weight: 700;
   font-style: bold;
+  color: whitesmoke;
 }
 
 .container-fluid {
@@ -22,6 +23,10 @@ h1 {
 } */
 .lavendar {
   background-color: lavender;
+}
+
+.rotated {
+  transform: rotate(40deg);
 }
 #title {
   /* background-color: #ff4c68; */
