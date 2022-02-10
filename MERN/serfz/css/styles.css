@@ -1,17 +1,21 @@
 body {
-  font-family: "Montserrat-black", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 #title {
   background-color: rgb(191, 191, 223);
   color: whitesmoke;
 }
 h1 {
-  font-size: 3rem;
+  font-family: "Montserrat-Black", sans-serif;
+  font-size: 3.8rem;
   line-height: 1.5;
   font-weight: 700;
   font-style: bold;
 }
-
+h3 {
+  font-family: "Montserrat";
+  font-weight: bold;
+}
 .container-fluid {
   padding: 3% 15%;
 }
@@ -28,10 +32,6 @@ h1 {
 } */
 .lavendar {
   background-color: lavender;
-}
-
-.rotated {
-  transform: rotate(40deg);
 }
 
 /* nav bar */
@@ -55,4 +55,22 @@ h1 {
 /* download buttons */
 .download-button {
   margin: 5% 3% 5% 0;
+}
+/* title image */
+.title-image {
+  width: 50%;
+  transform: rotate(25deg);
+}
+
+/* features sect*/
+#features {
+  padding: 7% 15%;
+}
+/* .features-icon {
+  color: red;
+} */
+.feature-box {
+  text-align: center;
+  padding: 5%;
+  border: 1px solid red;
 }
