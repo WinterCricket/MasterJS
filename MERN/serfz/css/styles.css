@@ -34,9 +34,11 @@ h1 {
   color: whitesmoke;
 }
 /* nav bar */
+.navbar {
+  padding-bottom: 4.5rem;
+}
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 2.5rem;
   font-weight: bold;
-  padding-bottom: 4.5rem;
 }
