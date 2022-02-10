@@ -53,6 +53,6 @@ h1 {
 }
 
 /* download buttons */
-.buttonspace {
-  padding: 2rem 0 0;
+.download-button {
+  margin: 5% 3% 5% 0;
 }
