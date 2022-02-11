@@ -66,11 +66,17 @@ h3 {
 #features {
   padding: 7% 15%;
 }
-/* .features-icon {
-  color: red;
-} */
+.features-icon {
+  color: lavender;
+  margin-bottom: 1rem;
+}
+.features-icon:hover {
+  color: rgb(191, 191, 223);
+}
 .feature-box {
   text-align: center;
   padding: 5%;
-  border: 1px solid red;
+}
+p {
+  color: #8f8f8f;
 }
