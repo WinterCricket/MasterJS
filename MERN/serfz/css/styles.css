@@ -12,12 +12,24 @@ h1 {
   font-weight: 700;
   font-style: bold;
 }
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
 h3 {
   font-family: "Montserrat";
   font-weight: bold;
 }
 .container-fluid {
   padding: 3% 15%;
+}
+
+p {
+  color: #8f8f8f;
 }
 /* .lefthand {
   padding-right: 1rem;
@@ -62,7 +74,7 @@ h3 {
   transform: rotate(25deg);
 }
 
-/* features sect*/
+/* features section*/
 #features {
   padding: 7% 15%;
 }
@@ -77,6 +89,28 @@ h3 {
   text-align: center;
   padding: 5%;
 }
-p {
-  color: #8f8f8f;
+
+/* testimonials sect */
+
+#testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: rgb(191, 191, 223);
+  color: whitesmoke;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+/* press */
+
+#press {
+  text-align: center;
+  background-color: rgb(191, 191, 223);
+  padding-bottom: 3%;
+}
+.press-logo {
+  width: 5%;
 }
