@@ -121,6 +121,17 @@ p {
 
 #pricing {
   text-align: center;
-  background-color: whitesmoke;
+
   padding-bottom: 3%;
+  justify-content: space-evenly;
+}
+
+.card {
+  /* text-align: center; */
+  width: 25rem;
+  margin-top: 3rem;
+}
+.btn-primary {
+  background-color: rgb(177, 177, 236);
+  border: none;
 }
