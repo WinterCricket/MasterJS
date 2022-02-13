@@ -119,7 +119,7 @@ p {
 }
 /* pricing section */
 
-#pricing {
+#dollars {
   text-align: center;
 
   padding-bottom: 3%;
@@ -141,4 +141,10 @@ p {
 .enterprise {
   background-color: black;
   color: whitesmoke;
+}
+.card-spacing {
+  justify-content: space-around;
+}
+#pricing {
+  text-align: center;
 }
