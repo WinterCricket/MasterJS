@@ -43,8 +43,13 @@ p {
   flex: 0 0 auto;
   width: 50%;
 } */
-.lavendar {
-  background-color: lavender;
+.pinkish {
+  background-color: rgb(233, 130, 236);
+}
+.phone {
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 /* nav bar */
@@ -80,7 +85,7 @@ p {
   padding: 7% 15%;
 }
 .features-icon {
-  color: lavender;
+  color: rgb(233, 130, 236);
   margin-bottom: 1rem;
 }
 .features-icon:hover {
@@ -143,21 +148,36 @@ p {
   background-color: black;
   color: whitesmoke;
 }
+.pro {
+  background-color: rgb(191, 191, 223);
+  color: whitesmoke;
+}
 /* .card-spacing {
   justify-content: space-around;
 } */
-/* #pricing {
+#pricing {
   text-align: center;
-} */
+  padding: 100px;
+}
 .card-button:hover {
   color: black;
-  background-color: white;
+  background-color: whitesmoke;
 }
 .price-image {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 100%;
   text-align: center;
   display: block;
-  padding-top: 3%;
+  margin: 10px;
+}
+/* .wide-btn {
+  padding: 10px 100px;
+} */
+/* .full {
+  display: block;
+  width: 100%;
+} */
+.pricing-col {
+  padding: 3% 2%;
 }
