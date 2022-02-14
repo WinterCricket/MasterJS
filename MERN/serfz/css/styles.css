@@ -34,6 +34,7 @@ p {
 /* .lefthand {
   padding-right: 1rem;
 } */
+
 .navbar-brand {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -147,4 +148,16 @@ p {
 }
 #pricing {
   text-align: center;
+}
+.card-button:hover {
+  color: black;
+  background-color: white;
+}
+.price-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  padding-top: 3%;
 }
