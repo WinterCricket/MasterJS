@@ -127,11 +127,11 @@ p {
   padding-top: 3%;
 }
 
-.card {
-  /* text-align: center; */
+/* .card {
+  
   width: 25rem;
   margin-top: 3rem;
-}
+} */
 .card-body p {
   line-height: 1;
 }
@@ -143,12 +143,12 @@ p {
   background-color: black;
   color: whitesmoke;
 }
-.card-spacing {
+/* .card-spacing {
   justify-content: space-around;
-}
-#pricing {
+} */
+/* #pricing {
   text-align: center;
-}
+} */
 .card-button:hover {
   color: black;
   background-color: white;
