@@ -79,7 +79,7 @@ p {
 
 /* title image */
 .title-image {
-  width: 50%;
+  width: 30%;
   transform: rotate(25deg);
   position: absolute;
 }
@@ -88,13 +88,11 @@ p {
 #features {
   padding: 7% 15%;
   background-color: #fff;
-}
-.features {
   position: relative;
-  z-index: 1;
 }
+
 .features-icon {
-  color: rgb(233, 130, 236);
+  color: rgb(243, 187, 138);
   margin-bottom: 1rem;
 }
 .features-icon:hover {
