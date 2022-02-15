@@ -5,6 +5,10 @@ body {
   background-color: rgb(191, 191, 223);
   color: whitesmoke;
 }
+
+/* section {
+  position: relative;
+} */
 h1 {
   font-family: "Montserrat-Black", sans-serif;
   font-size: 3.8rem;
@@ -31,6 +35,9 @@ h3 {
 p {
   color: #8f8f8f;
 }
+.phone {
+}
+
 /* .lefthand {
   padding-right: 1rem;
 } */
@@ -45,11 +52,6 @@ p {
 } */
 .pinkish {
   background-color: rgb(233, 130, 236);
-}
-.phone {
-  overflow: hidden;
-  overflow-y: hidden;
-  overflow-x: hidden;
 }
 
 /* nav bar */
@@ -74,15 +76,22 @@ p {
 .download-button {
   margin: 5% 3% 5% 0;
 }
+
 /* title image */
 .title-image {
   width: 50%;
   transform: rotate(25deg);
+  position: absolute;
 }
 
 /* features section*/
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+}
+.features {
+  position: relative;
+  z-index: 1;
 }
 .features-icon {
   color: rgb(233, 130, 236);
@@ -103,6 +112,7 @@ p {
   background-color: rgb(191, 191, 223);
   color: whitesmoke;
 }
+
 .testimonial-image {
   width: 10%;
   border-radius: 50%;
