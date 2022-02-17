@@ -190,7 +190,7 @@ p {
 .pricing-col {
   padding: 3% 2%;
 }
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
   #title {
     text-align: center;
   }
@@ -198,4 +198,11 @@ p {
     position: static;
     transform: rotate(0);
   }
+}
+
+#cta {
+  background-color: rgb(191, 191, 223);
+  color: whitesmoke;
+  text-align: center;
+  padding: 4rem 2rem;
 }
