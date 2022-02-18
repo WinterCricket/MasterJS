@@ -1,35 +1,23 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
-#title {
-  background-color: rgb(191, 191, 223);
-  color: whitesmoke;
-}
 
 /* section {
   position: relative;
 } */
-h1 {
-  font-family: "Montserrat-Black", sans-serif;
-  font-size: 3.8rem;
-  line-height: 1.5;
-  font-weight: 700;
-  font-style: bold;
-}
-
-h2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: "Montserrat", sans-serif;
   font-weight: bold;
-  line-height: 1.5;
+  font-weight: 700;
 }
 
 h3 {
-  font-family: "Montserrat";
-  font-weight: bold;
-}
-.container-fluid {
-  padding: 3% 15%;
+  font-size: 1.5rem;
 }
 
 p {
@@ -40,6 +28,109 @@ p {
   padding-right: 1rem;
 } */
 
+#title {
+  background-color: rgb(191, 191, 223);
+  color: whitesmoke;
+}
+
+/* features section*/
+#features {
+  padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
+}
+
+.features-icon {
+  color: rgb(243, 187, 138);
+  margin-bottom: 1rem;
+}
+.features-icon:hover {
+  color: rgb(191, 191, 223);
+}
+.feature-box {
+  text-align: center;
+  padding: 5%;
+}
+
+/* testimonials sect */
+
+#testimonials {
+  text-align: center;
+  background-color: rgb(191, 191, 223);
+  color: whitesmoke;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 50%;
+  margin: 20px;
+}
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+/* press section */
+#press {
+  text-align: center;
+  background-color: rgb(191, 191, 223);
+  padding-bottom: 3%;
+}
+.press-logo {
+  width: 10%;
+  margin: 20px 20px 50px;
+}
+
+#dollars {
+  text-align: center;
+
+  padding-bottom: 3%;
+  padding-top: 3%;
+}
+/* pricing section */
+
+#pricing {
+  text-align: center;
+  padding: 100px;
+}
+.price-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  text-align: center;
+  display: block;
+  margin: 10px;
+}
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+#cta {
+  background-color: rgb(191, 191, 223);
+  color: whitesmoke;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+#footer {
+  text-align: center;
+  padding: 7% 15%;
+}
+#footer i {
+  color: black;
+}
+
+.biggest-heading {
+  line-height: 1.5;
+  font-size: 3.5rem;
+}
+.container-fluid {
+  padding: 3% 15%;
+}
 .navbar-brand {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -82,61 +173,18 @@ p {
   position: absolute;
   right: 20%;
 }
-
-/* features section*/
-#features {
-  padding: 7% 15%;
-  background-color: #fff;
-  position: relative;
+@media (max-width: 992px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
 }
 
-.features-icon {
-  color: rgb(243, 187, 138);
-  margin-bottom: 1rem;
-}
-.features-icon:hover {
-  color: rgb(191, 191, 223);
-}
-.feature-box {
-  text-align: center;
-  padding: 5%;
-}
-
-/* testimonials sect */
-
-#testimonials {
-  text-align: center;
-  background-color: rgb(191, 191, 223);
-  color: whitesmoke;
-}
-
-.testimonial-image {
-  width: 10%;
-  border-radius: 50%;
-  margin: 20px;
-}
-
-/* press */
-
-#press {
-  text-align: center;
-  background-color: rgb(191, 191, 223);
-  padding-bottom: 3%;
-}
-.press-logo {
-  width: 10%;
-  margin: 20px 20px 50px;
-}
 .carousel-item {
   padding: 7% 15%;
-}
-/* pricing section */
-
-#dollars {
-  text-align: center;
-
-  padding-bottom: 3%;
-  padding-top: 3%;
 }
 
 /* .card {
@@ -162,49 +210,14 @@ p {
 /* .card-spacing {
   justify-content: space-around;
 } */
-#pricing {
-  text-align: center;
-  padding: 100px;
-}
+
 .card-button:hover {
   color: black;
   background-color: whitesmoke;
 }
-.price-image {
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
-  text-align: center;
-  display: block;
-  margin: 10px;
-}
-/* .wide-btn {
-  padding: 10px 100px;
-} */
-/* .full {
-  display: block;
-  width: 100%;
-} */
-.pricing-col {
-  padding: 3% 2%;
-}
-@media (max-width: 992px) {
-  #title {
-    text-align: center;
-  }
-  .title-image {
-    position: static;
-    transform: rotate(0);
-  }
-}
+
 /* call to action */
 
-#cta {
-  background-color: rgb(191, 191, 223);
-  color: whitesmoke;
-  text-align: center;
-  padding: 7% 15%;
-}
 .cta-heading {
   font-size: 3.5rem;
   font-family: "Montserrat", sans-serif;
@@ -217,13 +230,7 @@ p {
     font-size: 10px;
   }
 } */
-#footer {
-  text-align: center;
-  padding: 7% 15%;
-}
-#footer i {
-  color: black;
-}
+
 .social {
   margin: 20px 10px;
 }
