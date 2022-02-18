@@ -24,9 +24,15 @@ p {
   color: #8f8f8f;
 }
 
-/* .lefthand {
-  padding-right: 1rem;
-} */
+/* Headings */
+.biggest-heading {
+  line-height: 1.5;
+  font-size: 3.5rem;
+}
+.section-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
 
 #title {
   background-color: rgb(191, 191, 223);
@@ -124,10 +130,6 @@ p {
   color: black;
 }
 
-.biggest-heading {
-  line-height: 1.5;
-  font-size: 3.5rem;
-}
 .container-fluid {
   padding: 3% 15%;
 }
