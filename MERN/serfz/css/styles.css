@@ -217,10 +217,13 @@ p {
     font-size: 10px;
   }
 } */
-.footer {
+#footer {
   text-align: center;
-  padding: 2% 3%;
+  padding: 7% 15%;
 }
-.footer a {
+#footer i {
   color: black;
+}
+.social {
+  margin: 20px 10px;
 }
