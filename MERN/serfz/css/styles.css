@@ -35,8 +35,6 @@ h3 {
 p {
   color: #8f8f8f;
 }
-.phone {
-}
 
 /* .lefthand {
   padding-right: 1rem;
@@ -190,7 +188,7 @@ p {
 .pricing-col {
   padding: 3% 2%;
 }
-@media (max-width: 1100px) {
+@media (max-width: 992px) {
   #title {
     text-align: center;
   }
@@ -199,15 +197,30 @@ p {
     transform: rotate(0);
   }
 }
+/* call to action */
 
 #cta {
   background-color: rgb(191, 191, 223);
   color: whitesmoke;
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 7% 15%;
 }
+.cta-heading {
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  line-height: 1.5;
+}
+
 /* @media (max-width: 1100px) {
   .cta-button {
     font-size: 10px;
   }
 } */
+.footer {
+  text-align: center;
+  padding: 2% 3%;
+}
+.footer a {
+  color: black;
+}
