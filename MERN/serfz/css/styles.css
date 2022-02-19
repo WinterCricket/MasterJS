@@ -3,9 +3,6 @@ body {
   text-align: center;
 }
 
-/* section {
-  position: relative;
-} */
 h1,
 h2,
 h3,
@@ -32,23 +29,31 @@ p {
   font-weight: 700;
   line-height: 1.5;
 }
+
 .bigger-heading {
   font-size: 2.6rem;
 }
+
 .section-heading {
   font-size: 3.5rem;
   line-height: 1.5;
 }
+/* containers */
+.container-fluid {
+  padding: 7% 15%;
+}
 
-#title {
-  background-color: rgb(191, 191, 223);
+/* sections */
+.section-colored {
+  background-color: rgb(177, 177, 236);
   color: whitesmoke;
-  text-align: left;
+}
+.section-white {
+  background-color: whitesmoke;
 }
 
 /* features section*/
 #features {
-  padding: 7% 15%;
   background-color: #fff;
   position: relative;
 }
@@ -57,9 +62,11 @@ p {
   color: rgb(243, 187, 138);
   margin-bottom: 1rem;
 }
+
 .features-icon:hover {
   color: rgb(191, 191, 223);
 }
+
 .feature-box {
   padding: 5%;
 }
@@ -67,7 +74,6 @@ p {
 /* testimonials sect */
 
 #testimonials {
-  background-color: rgb(191, 191, 223);
   color: whitesmoke;
 }
 
@@ -76,15 +82,17 @@ p {
   border-radius: 50%;
   margin: 20px;
 }
+
 .testimonial-text {
   font-size: 3rem;
   line-height: 1.5;
 }
+
 /* press section */
 #press {
-  background-color: rgb(191, 191, 223);
   padding-bottom: 3%;
 }
+
 .press-logo {
   width: 10%;
   margin: 20px 20px 50px;
@@ -94,11 +102,13 @@ p {
   padding-bottom: 3%;
   padding-top: 3%;
 }
+
 /* pricing section */
 
 #pricing {
   padding: 100px;
 }
+
 .price-image {
   width: 150px;
   height: 150px;
@@ -107,6 +117,7 @@ p {
   display: block;
   margin: 10px;
 }
+
 .price-text {
   font-size: 3rem;
   line-height: 1.5;
@@ -116,22 +127,8 @@ p {
   padding: 3% 2%;
 }
 
-#cta {
-  background-color: rgb(191, 191, 223);
-  color: whitesmoke;
-
-  padding: 7% 15%;
-}
-
-#footer {
-  padding: 7% 15%;
-}
 #footer i {
   color: black;
-}
-
-.container-fluid {
-  padding: 3% 15%;
 }
 
 .pinkish {
@@ -146,21 +143,28 @@ p {
 .nav-item {
   padding: 0 18px;
 }
+
 .nav-link {
   font-size: 1.2rem;
   font-family: "Montserrat";
   font-weight: lighter;
 }
+
 .navbar-brand {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
 }
+/* title section */
 
 /* download buttons */
 .download-button {
   margin: 5% 3% 5% 0;
 }
 
+#title .container-fluid {
+  text-align: left;
+  padding: 3% 15% 7%;
+}
 /* title image */
 .title-image {
   width: 30%;
@@ -168,33 +172,34 @@ p {
   position: absolute;
   right: 20%;
 }
+
 @media (max-width: 992px) {
   #title {
     text-align: center;
   }
+
   .title-image {
     position: static;
     transform: rotate(0);
   }
 }
 
-.carousel-item {
-  padding: 7% 15%;
-}
-
 .card-body p {
   line-height: 1;
 }
+
 .btn-primary {
   background-color: rgb(177, 177, 236);
   border: none;
 }
+
 .enterprise {
   background-color: black;
   color: whitesmoke;
 }
+
 .pro {
-  background-color: rgb(191, 191, 223);
+  background-color: rgb(177, 177, 236);
   color: whitesmoke;
 }
 

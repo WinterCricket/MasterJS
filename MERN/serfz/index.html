@@ -26,10 +26,10 @@
 <body>
 
 
-  <section id="title" class="title">
+  <section id="title" class="title section-colored">
 
     <div class="container-fluid">
-
+      <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
         <a href="" class="navbar-brand mb-4 rounded-3 shadow-sm bigger-heading">serfz</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
@@ -79,42 +79,44 @@
       </div>
   </section>
 
-  
+
 
   <!-- Features -->
 
-  <section id="features" >
-    <div class="row ">
-      <div class="feature-box col-lg-4 mb-4 rounded-3 shadow-sm">
-        <i class="fa fa-gavel fa-4x features-icon" aria-hidden="true"></i>
-        <h3> Easy Abuse</h3>
-        <p>
-          New laws: property rights are your rights over their bodies.
-        </p>
-      </div>
-      <div class="feature-box col-lg-4">
-        <i class="fa fa-money fa-4x features-icon" aria-hidden="true"></i>
-        <h3>You're Wealth</h3>
-        <p>We have all the neo-serfs, your greatest capital.</p>
-      </div>
-      <div class="feature-box col-lg-4 mb-4 rounded-3 shadow-sm">
-        <i class="fa fa-briefcase fa-4x features-icon" aria-hidden="true"></i>
-        <h3>Work Guaranteed</h3>
-        <p>No more "human rights" excuses for slacking.</p>
+  <section id="features" class="section-white">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="feature-box col-lg-4 mb-4 rounded-3 shadow-sm">
+          <i class="fa fa-gavel fa-4x features-icon" aria-hidden="true"></i>
+          <h2> Easy Abuse</h2>
+          <p>
+            New laws: property rights are your rights over their bodies.
+          </p>
+        </div>
+        <div class="feature-box col-lg-4">
+          <i class="fa fa-money fa-4x features-icon" aria-hidden="true"></i>
+          <h2>You're Wealth</h2>
+          <p>We have all the neo-serfs, your greatest capital.</p>
+        </div>
+        <div class="feature-box col-lg-4 mb-4 rounded-3 shadow-sm">
+          <i class="fa fa-briefcase fa-4x features-icon" aria-hidden="true"></i>
+          <h2>Work Guaranteed</h2>
+          <p>No more "human rights" excuses for slacking.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Testimonials -->
 
-  <section id="testimonials" class="testimonials">
+  <section id="testimonials" class="testimonials section-colored">
 
 
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
       <div class="carousel-inner">
 
 
-        <div class="carousel-item active">
+        <div class="carousel-item active container-fluid">
           <h2 class="testimonial-text">
             Serfs can't afford lawyers. This means I don't have to.
           </h2>
@@ -123,7 +125,7 @@
           <em>Wendy, New York, in self-reflection</em>
         </div>
 
-        <div class="carousel-item">
+        <div class="carousel-item container-fluid">
           <h2 class="testimonial-text">
             Owning someone cures my loneliness. Don't judge me!
           </h2>
@@ -144,43 +146,46 @@
       </button>
 
     </div>
+
   </section>
 
 
 
   <!-- Press -->
-  <section id="press">
+  <section id="press" class="section-colored">
 
-
-    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc1IiBoZWlnaHQ9IjQ3IiB2aWV3Qm94PSIwIDAgMTc1IDQ3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDx0aXRsZT5Mb2dvOiBIYWNrIFJlYWN0b3I8L3RpdGxlPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBkPSJNMTkuODMgNS45NEExOC4wNyAxOC4wNyAwIDAwNS40IDIzLjU0YTE4LjEgMTguMSAwIDAwMTYuOSAxNy45NFYzMy41YTEwLjEgMTAuMSAwIDAxLTguODYtOS45NmMwLTUuMSAzLjg3LTkuMzMgOC44NS05Ljk3di0yLjQ2YTEyLjU3IDEyLjU3IDAgMDAtMTEuMzIgMTIuNDNjMCA1LjU4IDMuNzIgMTAuMzIgOC44NSAxMS45MnYzLjE3YTE1LjYxIDE1LjYxIDAgMDEtMTEuOTQtMTUuMWMwLTguMTMgNi4zNS0xNC44MiAxNC40MS0xNS40OVYuMjJDOS45LjkgMCAxMS4xIDAgMjMuNTRjMCAxMi40MyA5Ljg5IDIyLjYzIDIyLjMgMjMuMzFWNDQuNGMtMTEuMDUtLjY4LTE5LjgzLTkuNzctMTkuODMtMjAuODZBMjEgMjEgMCAwMTE5LjgzIDIuOTgiIGZpbGw9IiMzNjM0MkUiIGZpbGwtcnVsZT0ibm9uemVybyIvPgogICAgPHBhdGggZD0iTTI0LjkyIDB2Mi40N0EyMS4xOSAyMS4xOSAwIDAxNDQuODggMjMuNWEyMS4xNiAyMS4xNiAwIDAxLTE3LjQ3IDIwLjcydi0yLjk4QTE4LjIxIDE4LjIxIDAgMDA0MS45MyAyMy41YzAtOS41Ni03LjUyLTE3LjQxLTE3LTE4LjF2OC4wNWM1LjAxLjY1IDguOSA0LjkgOC45IDEwLjA1IDAgNS4xNC0zLjg5IDkuNC04LjkgMTAuMDV2Mi40OGM2LjM5LS42NiAxMS40LTYuMDMgMTEuNC0xMi41MyAwLTUuNjMtMy43Ni0xMC40LTguOTItMTIuMDJWOC4zQTE1LjczIDE1LjczIDAgMDEzOS40MyAyMy41YzAgOC4yLTYuNCAxNC45NS0xNC41IDE1LjYyVjQ3YzEyLjQ5LS42OCAyMi40NC0xMC45NiAyMi40NC0yMy41UzM3LjQyLjY5IDI0LjkyIDAiIGZpbGw9IiMyRDgyQjgiIGZpbGwtcnVsZT0ibm9uemVybyIvPgogICAgPHBhdGggZmlsbD0iIzNEMzkzNSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNNjguMzUgMTkuMzh2LTcuOTZoLTkuNDd2Ny45NmgtMy4yVjEuMmgzLjJWOC42aDkuNDdWMS4yaDMuMnYxOC4xOGgtMy4yTTgyLjYyIDQuMzlsLTMuMjcgOC42N2g2LjU0bC0zLjI3LTguNjd6bTUuNTEgMTVsLTEuMzQtMy41MmgtOC4zNGwtMS4zMyAzLjUxaC0zLjYzTDgwLjYzIDEuMmgzLjk4bDcuMTQgMTguMThoLTMuNjJ6TTkyLjA1IDEwLjNjMC01LjYyIDQuMTctOS40IDkuNTQtOS40YTguMTUgOC4xNSAwIDAxNy4yOCA0LjA1bC0yLjcgMS40MmE1LjM3IDUuMzcgMCAwMC00LjU4LTIuNjRjLTMuNiAwLTYuMjcgMi43Mi02LjI3IDYuNTYgMCAzLjc5IDIuNjcgNi41NiA2LjI3IDYuNTYgMS45NCAwIDMuNy0xLjE0IDQuNTgtMi42NGwyLjcyIDEuMzZhOC4zIDguMyAwIDAxLTcuMyA0LjExYy01LjM3IDAtOS41NC0zLjgtOS41NC05LjM5TTEyMi4zIDE5LjM4bC02LjA3LTcuNjktMS42IDEuODl2NS44aC0zLjJWMS4yaDMuMnY4LjY0bDcuMS04LjY0aDMuOTVsLTcuMzggOC41NiA3Ljk2IDkuNjJoLTMuOTVNNjYuMzUgMzMuMzZjMC0xLjc0LTEuMy0yLjg2LTMuMS0yLjg2aC00LjM4djUuNzhoNC4zOGMxLjggMCAzLjEtMS4xNSAzLjEtMi45MnptLS4zIDEyLjUybC00LTYuOGgtMy4xOHY2LjhoLTMuMTlWMjcuNjloNy45OGMzLjU5IDAgNS45NiAyLjMyIDUuOTYgNS43YTUuMTIgNS4xMiAwIDAxLTQuMzMgNS4zNGw0LjQ2IDcuMTVoLTMuN3pNNzIuNzUgNDUuODhWMjcuNjloMTIuNXYyLjgxaC05LjN2NC42OWg5LjF2Mi44aC05LjF2NS4wOGg5LjN2Mi44aC0xMi41TTk2LjAyIDMwLjg4bC0zLjI3IDguNjdoNi41NGwtMy4yNy04LjY3em01LjUgMTVsLTEuMzMtMy41MmgtOC4zNGwtMS4zMyAzLjUyaC0zLjYzbDcuMTQtMTguMTloMy45OGw3LjE0IDE4LjE5aC0zLjYyek0xMDUuNDUgMzYuODZjMC01LjYgNC4xNy05LjQgOS41NC05LjRhOC4xNSA4LjE1IDAgMDE3LjI3IDQuMDZsLTIuNyAxLjQyQTUuMzcgNS4zNyAwIDAwMTE1IDMwLjNjLTMuNiAwLTYuMjcgMi43Mi02LjI3IDYuNTYgMCAzLjc4IDIuNjcgNi41NiA2LjI3IDYuNTYgMS45MyAwIDMuNy0xLjE0IDQuNTctMi42NGwyLjczIDEuMzZhOC4zIDguMyAwIDAxLTcuMyA0LjExYy01LjM3IDAtOS41NC0zLjgxLTkuNTQtOS40TTEyOS4zIDQ1Ljg4VjMwLjVoLTUuNTF2LTIuOEgxMzh2Mi44aC01LjUydjE1LjM4aC0zLjE5TTE1NC4yNyAzNi44NmMwLTMuNzYtMi4zNi02LjU2LTYuMDEtNi41Ni0zLjY3IDAtNi4wMiAyLjgtNi4wMiA2LjU2IDAgMy43MyAyLjM1IDYuNTYgNi4wMiA2LjU2IDMuNjUgMCA2LjAxLTIuODMgNi4wMS02LjU2em0tMTUuMyAwYzAtNS40MiAzLjg1LTkuNCA5LjI5LTkuNCA1LjQyIDAgOS4yOCAzLjk4IDkuMjggOS40cy0zLjg2IDkuNC05LjI4IDkuNGMtNS40NCAwLTkuMjgtMy45OC05LjI4LTkuNHpNMTcxLjI4IDMzLjM2YzAtMS43NC0xLjMxLTIuODYtMy4xLTIuODZoLTQuMzl2NS43OGg0LjM4YzEuOCAwIDMuMS0xLjE1IDMuMS0yLjkyem0tLjMgMTIuNTJsLTQtNi44aC0zLjE5djYuOGgtMy4xOFYyNy42OWg3Ljk3YzMuNiAwIDUuOTYgMi4zMiA1Ljk2IDUuN2E1LjEyIDUuMTIgMCAwMS00LjMyIDUuMzRsNC40NiA3LjE1aC0zLjd6Ii8+CiAgPC9nPgo8L3N2Zz4K"
-      class="press-logo" alt="Hack Reactor">
-
-    <img src="https://learn-bootcamp.mit.edu/hs-fs/hubfs/Bootcamps%20Logo%20Black-1.png?width=371&name=Bootcamps%20Logo%20Black-1.png"
-      class="press-logo" alt="MIT bootcamps">
 
     <img
-      src="https://image.pitchbook.com/7SAppYUdXZ1O4qSMwyM1FGsRGqD1567682331470_200x200"
-      class="press-logo" alt="Thinkful">
-    <img src="https://images.squarespace-cdn.com/content/v1/57e01ab38419c2abeec91156/1479613316829-3YAI5B5BVZ7K1V5BR2BJ/ttp_logo.png?format=300w"
+      src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTc1IiBoZWlnaHQ9IjQ3IiB2aWV3Qm94PSIwIDAgMTc1IDQ3IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDx0aXRsZT5Mb2dvOiBIYWNrIFJlYWN0b3I8L3RpdGxlPgogIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICA8cGF0aCBkPSJNMTkuODMgNS45NEExOC4wNyAxOC4wNyAwIDAwNS40IDIzLjU0YTE4LjEgMTguMSAwIDAwMTYuOSAxNy45NFYzMy41YTEwLjEgMTAuMSAwIDAxLTguODYtOS45NmMwLTUuMSAzLjg3LTkuMzMgOC44NS05Ljk3di0yLjQ2YTEyLjU3IDEyLjU3IDAgMDAtMTEuMzIgMTIuNDNjMCA1LjU4IDMuNzIgMTAuMzIgOC44NSAxMS45MnYzLjE3YTE1LjYxIDE1LjYxIDAgMDEtMTEuOTQtMTUuMWMwLTguMTMgNi4zNS0xNC44MiAxNC40MS0xNS40OVYuMjJDOS45LjkgMCAxMS4xIDAgMjMuNTRjMCAxMi40MyA5Ljg5IDIyLjYzIDIyLjMgMjMuMzFWNDQuNGMtMTEuMDUtLjY4LTE5LjgzLTkuNzctMTkuODMtMjAuODZBMjEgMjEgMCAwMTE5LjgzIDIuOTgiIGZpbGw9IiMzNjM0MkUiIGZpbGwtcnVsZT0ibm9uemVybyIvPgogICAgPHBhdGggZD0iTTI0LjkyIDB2Mi40N0EyMS4xOSAyMS4xOSAwIDAxNDQuODggMjMuNWEyMS4xNiAyMS4xNiAwIDAxLTE3LjQ3IDIwLjcydi0yLjk4QTE4LjIxIDE4LjIxIDAgMDA0MS45MyAyMy41YzAtOS41Ni03LjUyLTE3LjQxLTE3LTE4LjF2OC4wNWM1LjAxLjY1IDguOSA0LjkgOC45IDEwLjA1IDAgNS4xNC0zLjg5IDkuNC04LjkgMTAuMDV2Mi40OGM2LjM5LS42NiAxMS40LTYuMDMgMTEuNC0xMi41MyAwLTUuNjMtMy43Ni0xMC40LTguOTItMTIuMDJWOC4zQTE1LjczIDE1LjczIDAgMDEzOS40MyAyMy41YzAgOC4yLTYuNCAxNC45NS0xNC41IDE1LjYyVjQ3YzEyLjQ5LS42OCAyMi40NC0xMC45NiAyMi40NC0yMy41UzM3LjQyLjY5IDI0LjkyIDAiIGZpbGw9IiMyRDgyQjgiIGZpbGwtcnVsZT0ibm9uemVybyIvPgogICAgPHBhdGggZmlsbD0iIzNEMzkzNSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNNjguMzUgMTkuMzh2LTcuOTZoLTkuNDd2Ny45NmgtMy4yVjEuMmgzLjJWOC42aDkuNDdWMS4yaDMuMnYxOC4xOGgtMy4yTTgyLjYyIDQuMzlsLTMuMjcgOC42N2g2LjU0bC0zLjI3LTguNjd6bTUuNTEgMTVsLTEuMzQtMy41MmgtOC4zNGwtMS4zMyAzLjUxaC0zLjYzTDgwLjYzIDEuMmgzLjk4bDcuMTQgMTguMThoLTMuNjJ6TTkyLjA1IDEwLjNjMC01LjYyIDQuMTctOS40IDkuNTQtOS40YTguMTUgOC4xNSAwIDAxNy4yOCA0LjA1bC0yLjcgMS40MmE1LjM3IDUuMzcgMCAwMC00LjU4LTIuNjRjLTMuNiAwLTYuMjcgMi43Mi02LjI3IDYuNTYgMCAzLjc5IDIuNjcgNi41NiA2LjI3IDYuNTYgMS45NCAwIDMuNy0xLjE0IDQuNTgtMi42NGwyLjcyIDEuMzZhOC4zIDguMyAwIDAxLTcuMyA0LjExYy01LjM3IDAtOS41NC0zLjgtOS41NC05LjM5TTEyMi4zIDE5LjM4bC02LjA3LTcuNjktMS42IDEuODl2NS44aC0zLjJWMS4yaDMuMnY4LjY0bDcuMS04LjY0aDMuOTVsLTcuMzggOC41NiA3Ljk2IDkuNjJoLTMuOTVNNjYuMzUgMzMuMzZjMC0xLjc0LTEuMy0yLjg2LTMuMS0yLjg2aC00LjM4djUuNzhoNC4zOGMxLjggMCAzLjEtMS4xNSAzLjEtMi45MnptLS4zIDEyLjUybC00LTYuOGgtMy4xOHY2LjhoLTMuMTlWMjcuNjloNy45OGMzLjU5IDAgNS45NiAyLjMyIDUuOTYgNS43YTUuMTIgNS4xMiAwIDAxLTQuMzMgNS4zNGw0LjQ2IDcuMTVoLTMuN3pNNzIuNzUgNDUuODhWMjcuNjloMTIuNXYyLjgxaC05LjN2NC42OWg5LjF2Mi44aC05LjF2NS4wOGg5LjN2Mi44aC0xMi41TTk2LjAyIDMwLjg4bC0zLjI3IDguNjdoNi41NGwtMy4yNy04LjY3em01LjUgMTVsLTEuMzMtMy41MmgtOC4zNGwtMS4zMyAzLjUyaC0zLjYzbDcuMTQtMTguMTloMy45OGw3LjE0IDE4LjE5aC0zLjYyek0xMDUuNDUgMzYuODZjMC01LjYgNC4xNy05LjQgOS41NC05LjRhOC4xNSA4LjE1IDAgMDE3LjI3IDQuMDZsLTIuNyAxLjQyQTUuMzcgNS4zNyAwIDAwMTE1IDMwLjNjLTMuNiAwLTYuMjcgMi43Mi02LjI3IDYuNTYgMCAzLjc4IDIuNjcgNi41NiA2LjI3IDYuNTYgMS45MyAwIDMuNy0xLjE0IDQuNTctMi42NGwyLjczIDEuMzZhOC4zIDguMyAwIDAxLTcuMyA0LjExYy01LjM3IDAtOS41NC0zLjgxLTkuNTQtOS40TTEyOS4zIDQ1Ljg4VjMwLjVoLTUuNTF2LTIuOEgxMzh2Mi44aC01LjUydjE1LjM4aC0zLjE5TTE1NC4yNyAzNi44NmMwLTMuNzYtMi4zNi02LjU2LTYuMDEtNi41Ni0zLjY3IDAtNi4wMiAyLjgtNi4wMiA2LjU2IDAgMy43MyAyLjM1IDYuNTYgNi4wMiA2LjU2IDMuNjUgMCA2LjAxLTIuODMgNi4wMS02LjU2em0tMTUuMyAwYzAtNS40MiAzLjg1LTkuNCA5LjI5LTkuNCA1LjQyIDAgOS4yOCAzLjk4IDkuMjggOS40cy0zLjg2IDkuNC05LjI4IDkuNGMtNS40NCAwLTkuMjgtMy45OC05LjI4LTkuNHpNMTcxLjI4IDMzLjM2YzAtMS43NC0xLjMxLTIuODYtMy4xLTIuODZoLTQuMzl2NS43OGg0LjM4YzEuOCAwIDMuMS0xLjE1IDMuMS0yLjkyem0tLjMgMTIuNTJsLTQtNi44aC0zLjE5djYuOGgtMy4xOFYyNy42OWg3Ljk3YzMuNiAwIDUuOTYgMi4zMiA1Ljk2IDUuN2E1LjEyIDUuMTIgMCAwMS00LjMyIDUuMzRsNC40NiA3LjE1aC0zLjd6Ii8+CiAgPC9nPgo8L3N2Zz4K"
+      class="press-logo" alt="Hack Reactor">
+
+    <img
+      src="https://learn-bootcamp.mit.edu/hs-fs/hubfs/Bootcamps%20Logo%20Black-1.png?width=371&name=Bootcamps%20Logo%20Black-1.png"
+      class="press-logo" alt="MIT bootcamps">
+
+    <img src="https://image.pitchbook.com/7SAppYUdXZ1O4qSMwyM1FGsRGqD1567682331470_200x200" class="press-logo"
+      alt="Thinkful">
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/57e01ab38419c2abeec91156/1479613316829-3YAI5B5BVZ7K1V5BR2BJ/ttp_logo.png?format=300w"
       class="press-logo" alt="nyc ttp">
 
 
   </section>
 
 
-<!-- pricing -->
-  
-  <section id="pricing">
+  <!-- pricing -->
+
+  <section id="pricing" class="section-white">
     <h2 class="section-heading">A Plan for your old age</h2>
     <p>Offspring are no longer reliable. Neo-serfs are.</p>
     <div class="row ">
-      
+
       <div class="pricing-col col-lg-4 col-md-6">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3">
             <h4 class="my-0 fw-normal lavender">Intern</h4>
           </div>
-          <center><img src="images/tilly.png" class="card-img-top price-image" alt="Young Tilly"></center> 
+          <center><img src="images/tilly.png" class="card-img-top price-image" alt="Young Tilly"></center>
           <div class="card-body d-grid gap-2">
             <h2 class="price-text card-title pricing-card-title">Free</h2>
             <h3 class="card-text">Tilly</h3>
@@ -191,14 +196,16 @@
           </div>
         </div>
       </div>
- 
-    
+
+
       <div class="pricing-col col-lg-4 col-md-6">
         <div class="card mb-4 rounded-3 shadow-sm">
           <div class="card-header py-3 pro">
             <h4 class="my-0 fw-normal">Pro</h4>
           </div>
-          <center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaT4upL0_Twdu1_991wOCnhRTc1ZF_G1UT2A&usqp=CAU" class="card-img-top price-image" alt="Young Tilly"></center> 
+          <center><img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaT4upL0_Twdu1_991wOCnhRTc1ZF_G1UT2A&usqp=CAU"
+              class="card-img-top price-image" alt="Young Tilly"></center>
           <div class="card-body d-grid gap-2">
             <h2 class="price-text card-title pricing-card-title">$59 <small class="text-muted fw-light">/mo</small></h2>
             <h3 class="card-text">Mary</h3>
@@ -210,19 +217,19 @@
           </div>
         </div>
       </div>
-    
-   
+
+
       <div class="pricing-col col-lg-4 col-md-12">
         <div class="card mb-4 rounded-3 shadow-lg">
-          
-           
-            <div class="card-header py-3 enterprise">
-              <h4 class="my-0 fw-bold ">Enterprise</h4>
-            </div>
-          
-          <center><img src="images/michael.png" class="card-img-top price-image" alt="Mike and coffee"></center> 
+
+
+          <div class="card-header py-3 enterprise">
+            <h4 class="my-0 fw-bold ">Enterprise</h4>
+          </div>
+
+          <center><img src="images/michael.png" class="card-img-top price-image" alt="Mike and coffee"></center>
           <div class="card-body d-grid gap-2">
-            
+
             <h2 class="price-text card-title pricing-card-title">$99 <small class="text-muted fw-light">/mo</small></h2>
             <h3 class="card-text">Mr Think</h3>
             <p>Top earnings</p>
@@ -235,8 +242,8 @@
         </div>
       </div>
 
-   
-  </div>
+
+    </div>
   </section>
 
 
@@ -245,7 +252,8 @@
 
   <!-- Call to Action -->
 
-  <section id="cta" ">
+  <section id="cta" class="section-colored">
+    <div class=" container-fluid">
     <!-- <div class="row ">
     <div class="col-lg-12  mb-4 rounded-3"> -->
     <h3 class="biggest-heading">Secure Your Power and Wealth.</h3>
@@ -253,22 +261,21 @@
       Download</button>
 
     <button type="button" class="btn btn-outline-light btn-lg download-button">🎬 Download</button>
-  <!-- </div>
-</div> -->
+    </div>
   </section>
-  
+
   <!-- Footer -->
 
-  <footer id="footer">
+  <footer id="footer" class="section-white">
 
-    
-    <i class="social fa fa-brands fa-google"></i>
-    <i class="social fa fa-brands fa-twitter"></i>
-    <i class="social fa fa-brands fa-instagram"></i>
-    <i class="social fa fa-brands fa-facebook"></i> 
-    <i class="social fa fa-regular fa-envelope"></i>
-    <p>© Copyright serfz 2022</p>
-  
+    <div class="container-fluid">
+      <i class="social fa fa-brands fa-google"></i>
+      <i class="social fa fa-brands fa-twitter"></i>
+      <i class="social fa fa-brands fa-instagram"></i>
+      <i class="social fa fa-brands fa-facebook"></i>
+      <i class="social fa fa-regular fa-envelope"></i>
+      <p>© Copyright serfz 2022</p>
+    </div>
   </footer>
 
 
