@@ -1,19 +1,10 @@
 "use strict";
-const show = document.querySelector(".execute");
 
-const name = "The Fool";
-
-const first = () => {
-  let a = 1;
-  const b = second(7, 9);
-  a = a + b;
-  return a;
-};
-
-function second(x, y) {
-  var c = 2;
-  return c;
+const birthYear = 1946;
+const dom = document.querySelector(".execute");
+function calcAge(currentYear) {
+  const age = currentYear - birthYear;
+  return age;
 }
-
-const x = first();
-show.innerHTML = x;
+let currentAge = calcAge(2035);
+dom.innerHTML = currentAge;
