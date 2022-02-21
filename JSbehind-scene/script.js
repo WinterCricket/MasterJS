@@ -1,3 +1,4 @@
+"use strict";
 const show = document.querySelector(".execute");
 
 const name = "The Fool";
@@ -15,5 +16,4 @@ function second(x, y) {
 }
 
 const x = first();
-// show.innerHTML = x;
-console.log(x);
+show.innerHTML = x;
