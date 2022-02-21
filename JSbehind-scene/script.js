@@ -1,10 +1,15 @@
 "use strict";
 
-const birthYear = 1946;
 const dom = document.querySelector(".execute");
-function calcAge(currentYear) {
-  const age = currentYear - birthYear;
-  return age;
+const som = document.querySelector(".show");
+function calcAge(birthYear) {
+  const age = 2335 - birthYear;
+  function printAge() {
+    const output = `You are ${age}, as you were born in ${birthYear}`;
+    som.innerHTML = output;
+  }
+  printAge();
+  return age + "Howdy, doofus!";
 }
-let currentAge = calcAge(2035);
+let currentAge = calcAge(1966);
 dom.innerHTML = currentAge;
