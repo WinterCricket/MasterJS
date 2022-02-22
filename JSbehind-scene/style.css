@@ -18,3 +18,11 @@ h1 {
   margin-top: 710px;
   margin-right: 50%;
 } */
+div {
+  height: auto;
+  width: 400px;
+  border: solid 1px white;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+}
