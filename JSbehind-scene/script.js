@@ -11,9 +11,11 @@ function calcAge(birthYear) {
     som.innerHTML = output;
 
     if (birthYear >= 1965 && birthYear <= 1980) {
+      var mouse = "Large cotton";
       const genX = `${firstName}, you are a gen xer. To the front of the line! Congrats, you youthful ${age}!`;
       dom.innerHTML = genX;
     }
+    console.log(mouse);
   }
 
   printAge();
