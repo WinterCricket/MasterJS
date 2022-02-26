@@ -24,21 +24,30 @@
 
 // const firstName = "Geordie";
 // calcAge(1976);
+//method sharing
+// const Mike = {
+//   lastName: "Foster",
+//   birthYear: 1991,
+//   calcAge: function () {
+//     console.log(this);
+//     console.log(2022 - this.birthYear);
+//   },
+// };
 
-const Mike = {
-  lastName: "Foster",
-  birthYear: 1991,
-  calcAge: function () {
-    console.log(this);
-    console.log(2022 - this.birthYear);
-  },
+// const Sam = {
+//   lastName: "Riker",
+//   birthYear: 1998,
+// };
+// Mike.calcAge();
+// Sam.calcAge = Mike.calcAge;
+
+// Sam.calcAge();
+
+//arguments keyword
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
 };
 
-const Sam = {
-  lastName: "Riker",
-  birthYear: 1998,
-};
-Mike.calcAge();
-Sam.calcAge = Mike.calcAge;
-
-Sam.calcAge();
+let adder = addExpr(4, 5, 8, 26);
+console.log(adder);
