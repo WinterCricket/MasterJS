@@ -30,7 +30,7 @@ const Mike = {
   birthYear: 1991,
   calcAge: function () {
     console.log(this);
-    console.log(2033 - this.birthYear);
+    console.log(2022 - this.birthYear);
   },
 };
 
@@ -38,4 +38,7 @@ const Sam = {
   lastName: "Riker",
   birthYear: 1998,
 };
-Mike.greet();
+Mike.calcAge();
+Sam.calcAge = Mike.calcAge;
+
+Sam.calcAge();
