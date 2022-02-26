@@ -24,7 +24,7 @@
 
 // const firstName = "Geordie";
 // calcAge(1976);
-var lastName = "Liquid";
+
 const Mike = {
   lastName: "Foster",
   birthYear: 1991,
@@ -32,12 +32,10 @@ const Mike = {
     console.log(this);
     console.log(2033 - this.birthYear);
   },
-
-  greet: function () {
-    console.log(this);
-    console.log(`You, ${this.lastName}, are now ${2022 - this.birthYear}`);
-  },
 };
-// calcAge();
-//Mike.calcAge();
+
+const Sam = {
+  lastName: "Riker",
+  birthYear: 1998,
+};
 Mike.greet();
