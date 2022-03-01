@@ -7,5 +7,6 @@ rnd = Math.floor(rnd) + 1;
 
 // percentage.innerHTML = rnd;
 
-let username = prompt("What are your names?");
+let username = prompt("What is your name?");
+prompt("What is the other's name?");
 alert(`${username}, you have a ${rnd}% chance of being a match.`);
