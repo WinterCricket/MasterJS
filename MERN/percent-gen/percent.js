@@ -9,4 +9,13 @@ rnd = Math.floor(rnd) + 1;
 
 let username = prompt("What is your name?");
 prompt("What is the other's name?");
-alert(`${username}, you have a ${rnd}% chance of being a match.`);
+
+if (rnd >= 51) {
+  alert(
+    `${username}, you have a ${rnd}% chance of being a match, which is good. Go for it!`
+  );
+} else {
+  alert(
+    `${username}, you have a ${rnd}% chance of being a match, which makes this unlikely. Seek elsewhere!`
+  );
+}
