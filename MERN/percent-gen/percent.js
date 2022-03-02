@@ -41,15 +41,13 @@ const percentage = document.querySelector(".output");
 // bmiCalculator(160, 71);
 
 function isLeap(year) {
-  let output;
-
   if (year % 400 === 0) {
     return `Leap year.`;
-  } else if (year % 4 === 0 && !(year % 100 === 0)) {
+  } else if (year % 4 === 0 && year % 100 !== 0) {
     return `Leap year.`;
   } else {
     return `Not leap year.`;
   }
 }
 
-console.log(isLeap(800));
+console.log(isLeap(200));
