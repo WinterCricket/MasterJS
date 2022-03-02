@@ -1,3 +1,4 @@
+"use strict";
 const percentage = document.querySelector(".output");
 // let rnd = Math.random();
 // rnd = rnd * 100;
@@ -39,17 +40,18 @@ const percentage = document.querySelector(".output");
 // }
 // bmiCalculator(160, 71);
 
-function leapYearCheck(year) {
+function isLeap(year) {
+  let output;
+
   if (year % 400 === 0) {
-    output = `Leap Year!`;
-  } else if (year % 100 === 0) {
-    output = `Not Leap Year!`;
-  } else if (year % 4 === 0) {
-    output = `Leap Year!`;
+    output = `Leap year.`;
+  } else if (year % 4 === 0 && !(year % 100 === 0)) {
+    output = `Leap year.`;
   } else {
-    output = `Not Leap Year!`;
+    output = `Not leap year.`;
   }
+
   console.log(output);
 }
 
-leapYearCheck(1904);
+isLeap(100);
