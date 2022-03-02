@@ -44,14 +44,12 @@ function isLeap(year) {
   let output;
 
   if (year % 400 === 0) {
-    output = `Leap year.`;
+    return `Leap year.`;
   } else if (year % 4 === 0 && !(year % 100 === 0)) {
-    output = `Leap year.`;
+    return `Leap year.`;
   } else {
-    output = `Not leap year.`;
+    return `Not leap year.`;
   }
-
-  console.log(output);
 }
 
-isLeap(100);
+console.log(isLeap(800));
