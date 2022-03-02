@@ -27,17 +27,29 @@ const percentage = document.querySelector(".output");
 //     `${username}, you have a ${rnd}% chance of being a match, which is crap. Go home and do something productive instead!`
 //   );
 // }
-function bmiCalculator(weight, height) {
-  const bmi = (weight * 703) / (height * height);
-  if (bmi < 18.5) {
-    interpretation = `Your BMI is ${bmi}, so you are underweight.`;
-  } else if (bmi > 18.5 && bmi < 24.9) {
-    interpretation = `Your BMI is ${bmi}, so you have a normal weight.`;
-  } else {
-    interpretation = `Your BMI is ${bmi}. so you are overweight.`;
-  }
+// function bmiCalculator(weight, height) {
+//   const bmi = (weight * 703) / (height * height);
+//   if (bmi < 18.5) {
+//     interpretation = `Your BMI is ${bmi}, so you are underweight.`;
+//   } else if (bmi > 18.5 && bmi < 24.9) {
+//     interpretation = `Your BMI is ${bmi}, so you have a normal weight.`;
+//   } else {
+//     interpretation = `Your BMI is ${bmi}. so you are overweight.`;
+//   }
+// }
+// bmiCalculator(160, 71);
 
-  //console.log(interpretation);
-  percentage.innerHTML = interpretation;
+function leapYearCheck(year) {
+  if (year % 400 === 0) {
+    output = `Leap Year!`;
+  } else if (year % 100 === 0) {
+    output = `Not Leap Year!`;
+  } else if (year % 4 === 0) {
+    output = `Leap Year!`;
+  } else {
+    output = `Not Leap Year!`;
+  }
+  console.log(output);
 }
-bmiCalculator(160, 71);
+
+leapYearCheck(1904);
