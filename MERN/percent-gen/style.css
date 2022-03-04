@@ -1,0 +1,17 @@
+div {
+  height: 800px;
+  width: 300px;
+  align-items: center;
+  background-color: rgb(139, 126, 126);
+}
+.div-box {
+  height: 160px;
+  width: 50%;
+  margin: 3%;
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.centered {
+  text-align: center;
+}

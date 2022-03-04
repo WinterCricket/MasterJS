@@ -50,5 +50,5 @@ function isLeap(year) {
   }
 }
 
-let leap = isLeap(1936);
+let leap = isLeap(1930);
 percentage.innerHTML = leap;
