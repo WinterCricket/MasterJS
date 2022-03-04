@@ -40,15 +40,25 @@ const percentage = document.querySelector(".output");
 // }
 // bmiCalculator(160, 71);
 
-function isLeap(year) {
-  if (year % 400 === 0) {
-    return `Leap year.`;
-  } else if (year % 4 === 0 && year % 100 !== 0) {
-    return `Leap year.`;
-  } else {
-    return `Not leap year.`;
-  }
-}
+// function isLeap(year) {
+//   if (year % 400 === 0) {
+//     return `Leap year.`;
+//   } else if (year % 4 === 0 && year % 100 !== 0) {
+//     return `Leap year.`;
+//   } else {
+//     return `Not leap year.`;
+//   }
+// }
 
-let leap = isLeap(1930);
-percentage.innerHTML = leap;
+// let leap = isLeap(1930);
+// percentage.innerHTML = leap;
+
+const guestList = ["Jack", "Anton", "Billy", "Sammy", "Susan"];
+
+let guestName = prompt("What's your name, please?");
+
+if (guestList.indexOf(guestName) !== -1) {
+  alert(`Welcome, ${guestName}!`);
+} else {
+  alert(`Call security and please remove ${guestName} from the club!`);
+}
