@@ -55,7 +55,7 @@ const percentage = document.querySelector(".output");
 
 const guestList = ["Jack", "Anton", "Billy", "Sammy", "Susan"];
 
-let guestName = prompt("What's your name, please?");
+const guestName = prompt("What's your name, please?");
 
 if (guestList.indexOf(guestName) !== -1) {
   alert(`Welcome, ${guestName}!`);
