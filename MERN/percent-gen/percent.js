@@ -1,5 +1,5 @@
 "use strict";
-const percentage = document.querySelector(".output");
+//const percentage = document.querySelector(".output");
 // let rnd = Math.random();
 // rnd = rnd * 100;
 // rnd = Math.floor(rnd) + 1;
@@ -53,12 +53,24 @@ const percentage = document.querySelector(".output");
 // let leap = isLeap(1930);
 // percentage.innerHTML = leap;
 
-const guestList = ["Jack", "Anton", "Billy", "Sammy", "Susan"];
+// const guestList = ["Jack", "Anton", "Billy", "Sammy", "Susan"];
 
-const guestName = prompt("What's your name, please?");
+// const guestName = prompt("What's your name, please?");
 
-if (guestList.indexOf(guestName) !== -1) {
-  alert(`Welcome, ${guestName}!`);
-} else {
-  alert(`Call security and please remove ${guestName} from the club!`);
+// if (guestList.indexOf(guestName) !== -1) {
+//   alert(`Welcome, ${guestName}!`);
+// } else {
+//   alert(`Call security and please remove ${guestName} from the club!`);
+// }
+
+let output = [];
+for (let i = 1; i <= 100; i++) {
+  if (i % 3 === 0) {
+    output.push("Fizz");
+  } else if (i % 5 === 0) {
+    output.push("Buzz");
+  } else {
+    output.push(i);
+  }
 }
+alert(output);
