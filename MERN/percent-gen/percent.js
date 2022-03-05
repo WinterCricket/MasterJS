@@ -80,21 +80,29 @@
 // }
 // fizzbuzz();
 
-let output = [];
-let count = 1;
+// let output = [];
+// let count = 1;
 
-function fizzbuzz() {
-  count++;
-  if (count % 15 === 0) {
-    output.push("FizzBuzz");
-  } else if (count % 3 === 0) {
-    output.push("Fizz");
-  } else if (count % 5 === 0) {
-    output.push("Buzz");
-  } else {
-    output.push(count);
-  }
-  console.log(output);
+// function fizzbuzz() {
+//   count++;
+//   if (count % 15 === 0) {
+//     output.push("FizzBuzz");
+//   } else if (count % 3 === 0) {
+//     output.push("Fizz");
+//   } else if (count % 5 === 0) {
+//     output.push("Buzz");
+//   } else {
+//     output.push(count);
+//   }
+//   console.log(output);
+// }
+
+// fizzbuzz();
+const names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+
+let output = "Michael is going to buy lunch today.";
+function whoIsPaying() {
+  let index = Math.floor(Math.random() * names.length);
+  console.log(names[index]);
 }
-
-fizzbuzz();
+whoIsPaying();
