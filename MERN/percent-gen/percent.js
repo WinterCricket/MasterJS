@@ -100,10 +100,31 @@
 // fizzbuzz();
 // let names;
 
-function whoIsPaying(names) {
-  let index = Math.floor(Math.random() * names.length);
-  let output = `${names[index]} is going to buy lunch today.`;
+// function whoIsPaying(names) {
+//   let index = Math.floor(Math.random() * names.length);
+//   let output = `${names[index]} is going to buy lunch today.`;
 
+//   console.log(output);
+// }
+// whoIsPaying(["Angela", "Ben", "Jenny", "Michael", "Chloe"]);
+
+//while loop fizz buzz
+let output = [];
+let count = 1;
+
+function fizzbuzz() {
+  while (count <= 100) {
+    if (count % 15 === 0) {
+      output.push("FizzBuzz");
+    } else if (count % 3 === 0) {
+      output.push("Fizz");
+    } else if (count % 5 === 0) {
+      output.push("Buzz");
+    } else {
+      output.push(count);
+    }
+    count++;
+  }
   console.log(output);
 }
-whoIsPaying(["Angela", "Ben", "Jenny", "Michael", "Chloe"]);
+fizzbuzz();
