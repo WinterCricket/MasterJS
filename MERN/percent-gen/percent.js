@@ -106,4 +106,4 @@ function whoIsPaying(names) {
 
   console.log(output);
 }
-whoIsPaying(["Angela", "Ben", "Jenny", "Michael", "Chloe"]);
+whoIsPaying(["Angela", "Ben", "Jenny", "Michael", "Chloe", "Sammy", "Eiffel"]);
