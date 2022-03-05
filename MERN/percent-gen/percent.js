@@ -98,11 +98,12 @@
 // }
 
 // fizzbuzz();
-const names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"];
+let names = [];
 
-let output = "Michael is going to buy lunch today.";
-function whoIsPaying() {
+function whoIsPaying(names) {
   let index = Math.floor(Math.random() * names.length);
-  console.log(names[index]);
+  let output = `${names[index]} is going to buy lunch today.`;
+
+  console.log(output);
 }
-whoIsPaying();
+whoIsPaying(["Angela", "Ben", "Jenny", "Michael", "Chloe"]);
