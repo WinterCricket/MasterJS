@@ -98,7 +98,7 @@
 // }
 
 // fizzbuzz();
-let names = [];
+// let names;
 
 function whoIsPaying(names) {
   let index = Math.floor(Math.random() * names.length);
@@ -106,4 +106,4 @@ function whoIsPaying(names) {
 
   console.log(output);
 }
-whoIsPaying(["Angela", "Ben", "Jenny", "Michael", "Chloe", "Sammy", "Eiffel"]);
+whoIsPaying(["Angela", "Ben", "Jenny", "Michael", "Chloe"]);
