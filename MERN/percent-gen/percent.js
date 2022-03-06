@@ -109,22 +109,37 @@
 // whoIsPaying(["Angela", "Ben", "Jenny", "Michael", "Chloe"]);
 
 //while loop fizz buzz
-let output = [];
-let count = 1;
+// let output = [];
+// let count = 1;
 
-function fizzbuzz() {
-  while (count <= 100) {
-    if (count % 15 === 0) {
-      output.push("FizzBuzz");
-    } else if (count % 3 === 0) {
-      output.push("Fizz");
-    } else if (count % 5 === 0) {
-      output.push("Buzz");
-    } else {
-      output.push(count);
-    }
-    count++;
+// function fizzbuzz() {
+//   while (count <= 100) {
+//     if (count % 15 === 0) {
+//       output.push("FizzBuzz");
+//     } else if (count % 3 === 0) {
+//       output.push("Fizz");
+//     } else if (count % 5 === 0) {
+//       output.push("Buzz");
+//     } else {
+//       output.push(count);
+//     }
+//     count++;
+//   }
+//   console.log(output);
+// }
+// fizzbuzz();
+let output = [];
+let bottles = 99;
+function beer() {
+  while (bottles <= 99) {
+    // output.push(
+    //   `${bottles} bottles of beer, ${bottles}. Take one down and pass it around, ${
+    //     bottles - 1
+    //   } bottles of beer...`
+    // );
+    output.push(`${bottles} then ${bottles - 1}`);
   }
+  bottles--;
   console.log(output);
 }
-fizzbuzz();
+beer();
