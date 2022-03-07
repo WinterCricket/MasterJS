@@ -157,19 +157,19 @@
 
 //fibonacci seq
 //index 0 = 0 i 1 = 1 i 2 = 1
-let numbers = [];
+function fib(n) {
+  let n1 = 0,
+    n2 = 1,
+    nextTerm;
 
-let sum = 0;
+  for (let i = 1; i < n; i++) {
+    console.log(n1);
+    nextTerm = n1 + n2;
 
-  for (let i = 0; i < 5; i++) {
-    if (i === 0) {
-      numbers.push(0);
-    } else if( i === 1){
-    numbers.push(1);
-    } else {
-       numbers = numbers.slice(numbers.length - 2, numbers.length);
-       sum += numbers[i];
+    n1 = n2;
 
-    //   numbers.push(sum);
-    }
- console.log(numbers);
+    n2 = nextTerm;
+  }
+  console.log(nextTerm);
+}
+fib(3);
