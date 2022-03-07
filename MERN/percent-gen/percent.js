@@ -130,27 +130,46 @@
 // fizzbuzz();
 
 //bottles of beer
-function beer() {
-  let bottles = 9;
+// function beer() {
+//   let bottles = 99;
 
-  while (bottles >= 1) {
-    let bottleWd = "bottles";
-    if (bottles === 1) {
-      bottleWd = "bottle";
-    }
+//   while (bottles >= 1) {
+//     let bottleWd = "bottles";
+//     if (bottles === 1) {
+//       bottleWd = "bottle";
+//     }
 
-    console.log(bottles + " " + bottleWd + " of beer, " + bottles + "!");
-    console.log(" Take one down and pass it around, ");
+//     console.log(bottles + " " + bottleWd + " of beer, " + bottles + "!");
+//     console.log(" Take one down and pass it around, ");
 
-    bottles--;
-    if (bottles === 1) {
-      bottleWd = "bottle";
+//     bottles--;
+//     if (bottles === 1) {
+//       bottleWd = "bottle";
+//     }
+//     if (bottles === 0) {
+//       bottleWd = "bottles";
+//       console.log("No bottles left!");
+//     }
+//     console.log(bottles + " " + bottleWd + "  of beer...");
+//   }
+// }
+// beer();
+
+//fibonacci seq
+//index 0 = 0 i 1 = 1 i 2 = 1
+let numbers = [];
+
+let sum = 0;
+
+  for (let i = 0; i < 5; i++) {
+    if (i === 0) {
+      numbers.push(0);
+    } else if( i === 1){
+    numbers.push(1);
+    } else {
+       numbers = numbers.slice(numbers.length - 2, numbers.length);
+       sum += numbers[i];
+
+    //   numbers.push(sum);
     }
-    if (bottles === 0) {
-      bottleWd = "bottles";
-      console.log("No bottles left!");
-    }
-    console.log(bottles + " " + bottleWd + "  of beer...");
-  }
-}
-beer();
+ console.log(numbers);
