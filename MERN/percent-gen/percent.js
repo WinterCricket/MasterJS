@@ -110,10 +110,10 @@
 
 //while loop fizz buzz
 // let output = [];
-// let count = 1;
+// let count = 20;
 
 // function fizzbuzz() {
-//   while (count <= 100) {
+//   while (count > 0) {
 //     if (count % 15 === 0) {
 //       output.push("FizzBuzz");
 //     } else if (count % 3 === 0) {
@@ -123,23 +123,24 @@
 //     } else {
 //       output.push(count);
 //     }
-//     count++;
+//     count--;
 //   }
 //   console.log(output);
 // }
 // fizzbuzz();
+
+//bottles of beer
 let output = [];
 let bottles = 99;
 function beer() {
-  while (bottles <= 99) {
-    // output.push(
-    //   `${bottles} bottles of beer, ${bottles}. Take one down and pass it around, ${
-    //     bottles - 1
-    //   } bottles of beer...`
-    // );
-    output.push(`${bottles} then ${bottles - 1}`);
+  while (bottles > 0) {
+    output.push(
+      `${bottles} bottles of beer, ${bottles}. Take one down and pass it around, ${
+        bottles - 1
+      } bottles of beer...`
+    );
+    bottles--;
   }
-  bottles--;
   console.log(output);
 }
 beer();
