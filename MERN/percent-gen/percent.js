@@ -130,17 +130,27 @@
 // fizzbuzz();
 
 //bottles of beer
-let output = [];
-let bottles = 99;
 function beer() {
-  while (bottles > 0) {
-    output.push(
-      `${bottles} bottles of beer, ${bottles}. Take one down and pass it around, ${
-        bottles - 1
-      } bottles of beer...`
-    );
+  let bottles = 9;
+
+  while (bottles >= 1) {
+    let bottleWd = "bottles";
+    if (bottles === 1) {
+      bottleWd = "bottle";
+    }
+
+    console.log(bottles + " " + bottleWd + " of beer, " + bottles + "!");
+    console.log(" Take one down and pass it around, ");
+
     bottles--;
+    if (bottles === 1) {
+      bottleWd = "bottle";
+    }
+    if (bottles === 0) {
+      bottleWd = "bottles";
+      console.log("No bottles left!");
+    }
+    console.log(bottles + " " + bottleWd + "  of beer...");
   }
-  console.log(output);
 }
 beer();
