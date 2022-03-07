@@ -157,19 +157,55 @@
 
 //fibonacci seq
 //index 0 = 0 i 1 = 1 i 2 = 1
-function fib(n) {
+// function fib(n) {
+//   let n1 = 0,
+//     n2 = 1,
+//     nextTerm;
+
+//   for (let i = 1; i < n; i++) {
+//     console.log(n1);
+
+//     nextTerm = n1 + n2;
+
+//     n1 = n2;
+
+//     n2 = nextTerm;
+//   }
+//   console.log(nextTerm);
+// }
+// fib(3);
+
+// const number = parseInt(prompt("Enter a positive number: "));
+// let n1 = 0,
+//   n2 = 1,
+//   nextTerm;
+
+// console.log("Fibonacci Series:");
+// console.log(n1); // print 0
+// console.log(n2); // print 1
+
+// nextTerm = n1 + n2;
+
+// while (nextTerm <= number) {
+//   // print the next term
+//   console.log(nextTerm);
+
+//   n1 = n2;
+//   n2 = nextTerm;
+//   nextTerm = n1 + n2;
+// }
+function fib(number) {
+  let array = [];
   let n1 = 0,
     n2 = 1,
     nextTerm;
 
-  for (let i = 1; i < n; i++) {
-    console.log(n1);
+  for (let i = 1; i <= number; i++) {
+    array.push(n1);
     nextTerm = n1 + n2;
-
     n1 = n2;
-
     n2 = nextTerm;
   }
-  console.log(nextTerm);
+  console.log(array);
 }
-fib(3);
+fib(6);
