@@ -194,13 +194,13 @@
 //   n2 = nextTerm;
 //   nextTerm = n1 + n2;
 // }
-function fib(number) {
+function fib(n) {
   let array = [];
   let n1 = 0,
     n2 = 1,
     nextTerm;
 
-  for (let i = 1; i <= number; i++) {
+  for (let i = 1; i <= n; i++) {
     array.push(n1);
     nextTerm = n1 + n2;
     n1 = n2;
