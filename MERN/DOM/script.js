@@ -1,1 +1,2 @@
-var word = document.lastElementChild.lastElementChild;
+var word = document.lastElementChild.lastElementChild.lastElementChild;
+word.innerHTML = "Sassy!";
