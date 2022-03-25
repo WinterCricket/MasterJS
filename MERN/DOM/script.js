@@ -6,4 +6,4 @@ const html = document.getElementsByClassName("btn")[0].style;
 html.color = "red";
 html.backgroundColor = "black";
 html.borderRadius = "20px";
-document.querySelector("li a")git .style.color = "red";
+document.querySelector("li a").style.color = "red";
