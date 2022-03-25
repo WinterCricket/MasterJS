@@ -6,3 +6,4 @@ const html = document.getElementsByClassName("btn")[0].style;
 html.color = "red";
 html.backgroundColor = "black";
 html.borderRadius = "20px";
+document.getElementsByTagName("a")[0].style.color = "red";
