@@ -9,4 +9,5 @@ btn.borderRadius = "20px";
 
 const h1 = document.querySelector("h1");
 h1.style.fontSize = "6rem";
-//h1.style.visibility = "hidden";
+h1.style.visibility = ".hide";
+document.querySelector("button").classList.remove("hide");
