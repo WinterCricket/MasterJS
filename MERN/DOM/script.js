@@ -6,7 +6,7 @@ const btn = document.getElementsByClassName("btn")[0].style;
 btn.color = "red";
 btn.backgroundColor = "black";
 btn.borderRadius = "20px";
-
+const anchor = document.querySelector("a");
 const h1 = document.querySelector("h1");
 h1.style.fontSize = "6rem";
 //h1.classList.add("hide");
