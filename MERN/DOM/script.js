@@ -9,5 +9,9 @@ btn.borderRadius = "20px";
 
 const h1 = document.querySelector("h1");
 h1.style.fontSize = "6rem";
-h1.style.visibility = ".hide";
+//h1.classList.add("hide");
+h1.innerHTML = `<em>Puddin Head Wilson</em>`;
+
 document.querySelector("button").classList.remove("hide");
+//h1.classList.remove("hide");
+//h1.classList.toggle("hide");
