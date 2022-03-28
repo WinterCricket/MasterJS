@@ -1,6 +1,7 @@
-let die1 = Math.floor(Math.random() * 5) + 1;
-img1 = `images/dice${die1}.png`;
-document.querySelector(".img1").innerHTML = die1;
-let die2 = Math.floor(Math.random() * 5) + 1;
-img2 = `images/dice${die2}.png`;
-document.querySelector(".img2").innerHTML = die2;
+const die1 = document.querySelector(".die1");
+const die2 = document.querySelector(".die2");
+let roll1 = Math.floor(Math.random() * 5) + 1;
+img1 = `images/dice${roll1}.png`;
+let roll2 = Math.floor(Math.random() * 5) + 1;
+img2 = `images/dice${roll2}.png`;
+console.log(img1);
