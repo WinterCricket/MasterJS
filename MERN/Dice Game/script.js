@@ -11,9 +11,9 @@ let source2 = "images/dice" + roll2 + ".png";
 die1.setAttribute("src", source1);
 die2.setAttribute("src", source2);
 if (roll1 > roll2) {
-  header.innerHTML = "Player 1 is a Winner!";
+  header.innerHTML = "Player 1 is a Winner!🚩";
 } else if (roll1 < roll2) {
-  header.innerHTML = "PLayer 2 is a Winner!";
+  header.innerHTML = "PLayer 2 is a Winner!🏁";
 } else {
-  header.innerHTML = "Draw!";
+  header.innerHTML = "Draw!🎌";
 }
