@@ -1,8 +1,8 @@
-let btns = document.querySelectorAll("button");
+let btns = document.querySelectorAll(".drum");
 
 for (i of btns) {
-  i.addEventListener("click", handleClick);
+  i.addEventListener("click", buttonClick);
 }
-function handleClick() {
+function buttonClick() {
   alert("Button Clicked!");
 }
