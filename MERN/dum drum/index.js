@@ -17,4 +17,6 @@ function multipad(put1, put2) {
 function operator(put1, put2, operator) {
   return operator(put1, put2);
 }
-console.log(operator(3, 6, multipad));
+//console.log(operator(3, 6, multipad));
+
+document.querySelector("footer").innerHTML = operator(3, 6, multipad);
