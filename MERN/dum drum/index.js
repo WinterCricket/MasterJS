@@ -7,16 +7,16 @@ function buttonClick() {
   alert("Button Clicked!");
 }
 
-function addad(put1, put1) {
+function add(put1, put2) {
   return put1 + put2;
 }
 
 function multipad(put1, put2) {
   return put1 * put2;
 }
-function operator(put1, put2, operator) {
+function calculator(put1, put2, operator) {
   return operator(put1, put2);
 }
 //console.log(operator(3, 6, multipad));
 
-document.querySelector("footer").innerHTML = operator(3, 6, multipad);
+document.querySelector("footer").innerHTML = calculator(3, 6, add);
