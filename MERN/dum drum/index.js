@@ -1,10 +1,8 @@
-//let btns = document.querySelectorAll(".drum");
-const w = document.querySelector(".w");
+var numberOfDrumButtons = document.querySelectorAll(".drum").length;
 
-// for (i of btns) {
-//   i.addEventListener("click", buttonClick);
-// }
-function buttonClick() {
-  var audio = new Audio("sounds/crash.mp3");
-  audio.play();
+for (var i = 0; i < numberOfDrumButtons; i++) {
+  document.querySelectorAll(".drum")[i].addEventListener("click", function () {
+    var audio = new Audio("sounds/crash.mp3");
+    audio.play();
+  });
 }

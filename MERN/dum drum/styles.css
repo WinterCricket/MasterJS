@@ -16,12 +16,15 @@ footer {
 }
 
 .w {
+  content: url("images/crash.png");
 }
 
 .a {
+  content: url("images/kick.png");
 }
 
 .s {
+  content: url("images/snare.png");
 }
 
 .d {
