@@ -14,33 +14,45 @@ footer {
   color: #8cc6da;
   font-family: sans-serif;
 }
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+}
 
 .w {
-  content: url("images/crash.png");
+  background-image: url("images/crash.png");
 }
 
 .a {
-  content: url("images/kick.png");
+  background-image: url("images/kick.png");
 }
 
 .s {
-  content: url("images/snare.png");
+  background-image: url("images/snare.png");
 }
 
 .d {
+  background-image: url("images/tom1.png");
 }
 
 .j {
+  background-image: url("images/tom2.png");
 }
 
 .k {
+  background-image: url("images/tom3.png");
 }
 
 .l {
+  background-image: url("images/tom4.png");
 }
 
 .set {
   margin: 10% auto;
+}
+button {
 }
 
 .game-over {
