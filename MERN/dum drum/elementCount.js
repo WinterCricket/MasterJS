@@ -17,21 +17,22 @@ function HouseKeeper(name, age, hasWorkPermit, languages, topSkill, permitted) {
   this.languages = languages;
   this.topSkill = topSkill;
   this.permitted = function () {
-    if (HouseKeeper.hasWorkPermit) {
+    if (this.hasWorkPermit) {
       alert(
-        "I'm " +
-          this.name +
-          ". I speak " +
-          this.languages +
-          "Pay me a lot of cash."
+        `I'm 
+          ${this.name}, your ${this.topSkill} 
+          housekeeper. I speak 
+          ${this.languages}
+          I'm legit, so pay me a lot of cash.`
       );
     } else {
       alert(
-        "I'm " +
-          this.name +
-          ". I speak " +
-          this.languages +
-          "Spank me, master! I have no labor union."
+        `I'm 
+          ${this.name}, your ${this.topSkill} 
+          housekeeper. I speak 
+          
+          ${this.languages}. 
+          Spank me, master! I have no labor union.`
       );
     }
   };
