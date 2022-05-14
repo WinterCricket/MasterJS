@@ -7,5 +7,5 @@ for (let i = 0; i < numberOfDrumButtons; i++) {
   });
 }
 
-// var audio = new Audio("sounds");
-//     audio.play();
+var audio = new Audio("sounds");
+audio.play();
