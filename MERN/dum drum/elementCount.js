@@ -19,41 +19,29 @@ function HouseKeeper(name, age, hasWorkPermit, languages, topSkill, permitted) {
   this.permitted = function () {
     if (this.hasWorkPermit) {
       alert(
-        `I'm 
-          ${this.name}, your ${this.topSkill} 
-          housekeeper. I speak 
-          ${this.languages}
-          I'm legit, so pay me a lot of cash.`
+        `I'm ${this.name}, your ${this.topSkill} housekeeper. I speak ${this.languages} I'm legit, so pay me a lot of cash.`
       );
     } else {
       alert(
-        `I'm 
-          ${this.name}, your ${this.topSkill} 
-          housekeeper. I speak 
-          
-          ${this.languages}. 
-          Spank me, master! I have no labor union.`
+        `I'm ${this.name}, your ${this.topSkill} housekeeper. I speak ${this.languages}. Spank me, master! I have no labor union.`
       );
     }
   };
 }
 
-let houseKeeper1 = new HouseKeeper(
-  "Ria Dyanos",
-  34,
-  true,
-  ["French", "Dutch", "Portuguese", "English"],
-  "fast clean"
+// let houseKeeper1 = new HouseKeeper(
+//   "Ria Dyanos",
+//   34,
+//   true,
+//   ["French", "Dutch", "Portuguese", "English"],
+//   "fast clean"
+// );
+// houseKeeper1.permitted();
+let houseKeeper2 = new HouseKeeper(
+  "Olga Olgala",
+  101,
+  false,
+  [" French", " English", " Pigeon", " ASL"],
+  "corny jokes"
 );
-houseKeeper1.permitted();
-// let houseKeeper2 = new HouseKeeper(
-//   "Olga Olgala",
-//   101,
-//   false,
-//   [" French", " English", " Pigeon", " ASL"],
-//   "corny jokes"
-// );
-
-// alert(
-//   `I'm ${houseKeeper2.name}, your ${houseKeeper2.topSkill} housekeeper. I speak ${houseKeeper2.languages}.`
-// );
+houseKeeper2.permitted();
