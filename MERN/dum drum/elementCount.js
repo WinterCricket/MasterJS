@@ -19,7 +19,7 @@ function HouseKeeper(name, age, hasWorkPermit, languages, topSkill, permitted) {
   this.permitted = function () {
     if (this.hasWorkPermit) {
       alert(
-        `I'm ${this.name}, your ${this.topSkill} housekeeper. I speak ${this.languages} I'm legit, so pay me a lot of cash.`
+        `I'm ${this.name}, your ${this.topSkill} housekeeper. I speak ${this.languages}. I'm legit, so pay me a lot of cash.`
       );
     } else {
       alert(
@@ -44,4 +44,4 @@ let houseKeeper2 = new HouseKeeper(
   [" French", " English", " Pigeon", " ASL"],
   "corny jokes"
 );
-houseKeeper2.permitted();
+// houseKeeper2.permitted();
