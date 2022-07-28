@@ -11,7 +11,7 @@ function moveZeroes(nums) {
       last--;
     }
   }
-  return nums;
+  return (document.getElementById("scratchpad").innerHTML = nums);
 }
 
-console.log(moveZeroes([1, 0, 3, 2, 0, 9, 4]));
+moveZeroes([1, 0, 3, 2, 0, 9, 4]);
