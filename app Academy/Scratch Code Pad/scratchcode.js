@@ -53,18 +53,38 @@
 // // Example:
 
 // printFives(20);
-function getCount(str) {
-  let vowelsCount = 0;
-  let smallLetters = str.toLowerCase();
-  let vowels = ["a", "e", "i", "o", "u"];
+// function getCount(str) {
+//   let vowelsCount = 0;
+//   let smallLetters = str.toLowerCase();
+//   let vowels = ["a", "e", "i", "o", "u"];
 
-  for (let char of smallLetters) {
-    if (vowels.includes(char)) {
-      vowelsCount++;
+//   for (let char of smallLetters) {
+//     if (vowels.includes(char)) {
+//       vowelsCount++;
+//     }
+//     vowelsCount--;
+//   }
+//   return vowelsCount;
+// }
+
+function countVowels(word) {
+  let countedVowels = 0;
+  let smallLetters = word.toLowerCase();
+  let index = 0;
+  while (index < smallLetters.length) {
+    let letter = smallLetters[index];
+    if (
+      letter === "a" ||
+      letter === "e" ||
+      letter === "i" ||
+      letter === "o" ||
+      letter === "u"
+    ) {
+      countedVowels++;
     }
-    vowelsCount--;
+    index++;
   }
-  return vowelsCount;
+  return countedVowels;
 }
 //console.log(getCount("forthwith"));
-document.getElementById("scratchpad").innerHTML = getCount("WondermUffin");
+document.getElementById("scratchpad").innerHTML = countVowels("WondermUffinE");
