@@ -54,18 +54,16 @@
 
 // printFives(20);
 function getCount(str) {
-  let vowelCounter = [];
+  let vowelsCount = 0;
   let smallLetters = str.toLowerCase();
-  let vowels = [a, e, i, o, u];
+  let vowels = ["a", "e", "i", "o", "u"];
 
-  for (i = 0; i < smallLetters.length; i++) {
-    if (
-      smallLetters[i] === "a" ||
-      smallLetters[i] === "e" ||
-      smallLetters === "i" ||
-      smallLetters === "o" ||
-      smallLetters === "u"
-    ) {
+  for (let char of smallLetters) {
+    if (vowels.includes(char)) {
+      vowelsCount++;
     }
   }
+  return vowelsCount;
 }
+//console.log(getCount("forthwith"));
+document.getElementById("scratchpad").innerHTML = getCount("wondermuffin");
