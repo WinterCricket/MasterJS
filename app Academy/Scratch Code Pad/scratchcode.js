@@ -62,8 +62,9 @@ function getCount(str) {
     if (vowels.includes(char)) {
       vowelsCount++;
     }
+    vowelsCount--;
   }
   return vowelsCount;
 }
 //console.log(getCount("forthwith"));
-document.getElementById("scratchpad").innerHTML = getCount("wondermuffin");
+document.getElementById("scratchpad").innerHTML = getCount("WondermUffin");
