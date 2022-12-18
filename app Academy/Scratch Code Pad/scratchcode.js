@@ -87,4 +87,5 @@ function countVowels(word) {
   return countedVowels;
 }
 //console.log(getCount("forthwith"));
-document.getElementById("scratchpad").innerHTML = countVowels("WondermUffinE");
+document.getElementById("scratchpad").innerHTML =
+  "Vowel Count:" + " " + countVowels("WondermUffinE");
