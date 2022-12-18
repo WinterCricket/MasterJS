@@ -30,15 +30,42 @@
 
 // console.log("Fourth!");
 // callMe();
-function whileDuo(arr) {
-  let i = 0;
-  while (i < arr.length) {
-    arr[i] = arr[i] * 2;
-    i++;
+// function whileDuo(arr) {
+//   let i = 0;
+//   while (i < arr.length) {
+//     arr[i] = arr[i] * 2;
+//     i++;
+//   }
+//   return arr;
+// }
+
+// let printout = whileDuo([1, 1, 2, 3, 5, 8, 13, 21, 34]);
+
+// document.getElementById("scratchpad").innerHTML = printout;
+// function printFives(max) {
+//   let i = 0;
+//   while (i < max) {
+//     console.log(i);
+//     i = i + 5;
+//   }
+// }
+
+// // Example:
+
+// printFives(20);
+function getCount(str) {
+  let vowelCounter = [];
+  let smallLetters = str.toLowerCase();
+  let vowels = [a, e, i, o, u];
+
+  for (i = 0; i < smallLetters.length; i++) {
+    if (
+      smallLetters[i] === "a" ||
+      smallLetters[i] === "e" ||
+      smallLetters === "i" ||
+      smallLetters === "o" ||
+      smallLetters === "u"
+    ) {
+    }
   }
-  return arr;
 }
-
-let printout = whileDuo([1, 1, 2, 3, 5, 8, 13, 21, 34]);
-
-document.getElementById("scratchpad").innerHTML = printout;
